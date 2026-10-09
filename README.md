@@ -10,6 +10,7 @@
 - `viewer_2d.html` — Interactive 2D Blueprint Viewer (แปลนสถาปัตย์ 2 มิติ พร้อมเครื่องมือวัดระยะ Pan-Zoom)
 - `prices.yaml` — บัญชีราคาค่าวัสดุและค่าแรงมาตรฐาน (อ้างอิง DPT BOQ)
 - `boq_breakdown.csv` — รายการสรุปถอดปริมาณและราคาก่อสร้าง (BOQ / QTO Summary)
+- `specifications.md` — รายการประกอบแบบสถาปัตยกรรมและวิศวกรรมโครงสร้าง (Architectural Specification Book อ้างอิง CSI MasterFormat 10 หมวดงาน และมาตรฐาน สถ./วสท./มอก.)
 
 ## 🚀 คำสั่ง debim ที่เกี่ยวข้อง
 
@@ -17,6 +18,9 @@
 # ตรวจสอบความถูกต้องและกฎหมายควบคุมอาคาร
 debim validate -m project.debim
 debim test -m project.debim
+
+# จัดทำรายการประกอบแบบ (Architectural Specifications Book)
+debim spec build -m project.debim -s specs/ -o specifications.md
 
 # ถอดปริมาณงาน (Quantitative Take-Off: Concrete, Formwork, Steel)
 debim qto -m project.debim

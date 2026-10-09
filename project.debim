@@ -74,54 +74,107 @@ materials:
   name: คอนกรีตโครงสร้าง คสล. 1:2:4 (240 ksc)
   category: concrete
   unit_cost_ref: MAT-C240
-- id: WOOD_SIDING
-  name: ไม้ฝาสำเร็จรูปหรือไม้จริง 1/2" x 8" ตีซ้อนเกล็ด
-  category: timber
-  unit_cost_ref: MAT-017
-- id: RED_BRICK
-  name: ก่ออิฐมอญครึ่งแผ่น
-  category: masonry
-  unit_cost_ref: MAT-015
-- id: PLASTER_EXT
-  name: ปูนฉาบเรียบภายนอกอาคาร
-  category: finish
-  unit_cost_ref: MAT-021
-- id: PLASTER_INT
-  name: ปูนฉาบเรียบภายในอาคาร
-  category: finish
-  unit_cost_ref: MAT-021
-- id: CERAMIC_TILE_FLOOR
-  name: กระเบื้องดินเผา/กระเบื้องเคลือบผิวด้าน 8" x 8"
-  category: finish
-  unit_cost_ref: MAT-024
-- id: WOOD_FLOOR
-  name: พื้นไม้เนื้อแข็ง 1" x 4" ตีเข้าลิ้น
-  category: timber
-  unit_cost_ref: MAT-026
+  spec: CONCRETE_240KSC
 - id: LEAN_CONC
   name: คอนกรีตหยาบรองก้นหลุม 1:3:5
   category: concrete
   unit_cost_ref: MAT-LEAN
+  spec: CONCRETE_LEAN_140KSC
+- id: REBAR_SD40
+  name: เหล็กข้ออ้อยและเหล็กกลมเสริมคอนกรีต
+  category: steel
+  unit_cost_ref: MAT-006
+  spec: REBAR_DEFORMED_SD40
+- id: CONC_FORMING
+  name: งานแบบหล่อคอนกรีตและค้ำยัน
+  category: concrete
+  unit_cost_ref: MAT-008
+  spec: CONCRETE_FORMING_ASA
+- id: RED_BRICK
+  name: ก่ออิฐมอญครึ่งแผ่น
+  category: masonry
+  unit_cost_ref: MAT-015
+  spec: CLAY_BRICK_TRADITIONAL
+- id: PLASTER_EXT
+  name: ปูนฉาบเรียบภายนอกอาคาร
+  category: finish
+  unit_cost_ref: MAT-021
+  spec: PORTLAND_CEMENT_PLASTERING_ASA
+- id: PLASTER_INT
+  name: ปูนฉาบเรียบภายในอาคาร
+  category: finish
+  unit_cost_ref: MAT-021
+  spec: PORTLAND_CEMENT_PLASTERING_ASA
+- id: CERAMIC_TILE_FLOOR
+  name: กระเบื้องดินเผา/กระเบื้องเคลือบผิวด้าน 8" x 8"
+  category: finish
+  unit_cost_ref: MAT-024
+  spec: TILING_ASA
+- id: WOOD_FLOOR
+  name: พื้นไม้เนื้อแข็ง 1" x 4" ตีเข้าลิ้น
+  category: timber
+  unit_cost_ref: MAT-026
+  spec: WOOD_FLOORING_ASA
+- id: WOOD_SIDING
+  name: ไม้ฝาสำเร็จรูปหรือไม้จริง 1/2" x 8" ตีซ้อนเกล็ด
+  category: timber
+  unit_cost_ref: MAT-017
+  spec: ARCHITECTURAL_WOODWORK_ASA
 - id: TEAK_WOOD
   name: ไม้สักแปรรูปทำวงกบและกรอบบานประตู-หน้าต่าง
   category: timber
   unit_cost_ref: MAT-010
+  spec: SOLID_TEAK_DOOR
 - id: GLASS_CLEAR
   name: กระจกใสหนา 5 มม.
   category: finish
   unit_cost_ref: MAT-011
+  spec: GLAZING_ASA
 - id: DOOR_PVC
   name: ประตูไฟเบอร์กลาส/PVC พร้อมวงกบ (ห้องน้ำ)
   category: finish
   unit_cost_ref: MAT-012
+  spec: METAL_DOORS_AND_FRAMES_ASA
 - id: STEEL_ROOF
   name: เหล็กรูปพรรณโครงสร้างหลังคา (อกไก่ จันทัน ตะเข้สัน แป)
   category: steel
   unit_cost_ref: MAT-005
+  spec: STRUCTURAL_STEEL_FRAMING_ASA
 - id: ROOF_TILE_WAO
   name: กระเบื้องว่าวซีเมนต์ 13 นิ้ว มุงหลังคา
   category: roof
   unit_cost_ref: MAT-001
+  spec: ROOF_TILES_ASA
+- id: PAINT_EXT
+  name: สีน้ำอะคริลิกทาภายนอกอาคาร
+  category: finish
+  unit_cost_ref: MAT-022
+  spec: TOA_SUPERSHIELD_EXT
+- id: PAINT_INT
+  name: สีน้ำอะคริลิกทาภายในอาคาร
+  category: finish
+  unit_cost_ref: MAT-023
+  spec: TOA_4SEASONS_INT
+- id: PLUMBING_WC
+  name: โถสุขภัณฑ์นั่งราบและอุปกรณ์ประกอบ
+  category: sanitary
+  unit_cost_ref: MAT-030
+  spec: COTTO_WC_DUAL_FLUSH
+- id: PLUMBING_PIPE
+  name: ท่อพีวีซีแข็งสำหรับงานระบายน้ำทิ้งและโสโครก
+  category: sanitary
+  unit_cost_ref: MAT-031
+  spec: SCG_PVC_CLASS_8_5
+- id: ELECTRICAL_SYS
+  name: งานระบบไฟฟ้า แสงสว่าง และเต้ารับ
+  category: electrical
+  unit_cost_ref: MAT-035
+  spec: ELECTRICAL_SYSTEM_ASA
+- id: TERMITE_SYS
+  name: งานระบบป้องกันและกำจัดปลวกใต้ดิน
+  category: earthwork
+  unit_cost_ref: MAT-038
+  spec: TERMITE_CONTROL_ASA
 elements:
 - class: IfcFooting
   tag: F10-1ฉ
