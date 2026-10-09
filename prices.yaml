@@ -1,0 +1,2103 @@
+currency: THB
+items:
+  EARTH-EXCAVATION:
+    name: งานดินขุดฐานราก
+    unit: m3
+    material_cost: 0.0
+    labor_cost: 75.0
+    standards:
+      masterformat: 31 23 16
+      uniformat: A1010
+  MAT-SAND-BEDDING:
+    name: ทรายหยาบรองพื้น/ฐานราก
+    unit: m3
+    material_cost: 310.0
+    labor_cost: 75.0
+    standards:
+      masterformat: 31 23 23
+      uniformat: A1010
+  MAT-LEAN-CONC: &id001
+    name: คอนกรีตหยาบ 1:3:5 รองก้นหลุม
+    unit: m3
+    material_cost: 1400.0
+    labor_cost: 270.0
+    standards:
+      masterformat: 03 30 00
+      uniformat: A1010
+  MAT-LEAN: *id001
+  MAT-C240:
+    name: คอนกรีตโครงสร้าง คสล. 1:2:4 (240 ksc)
+    unit: m3
+    material_cost: 1590.0
+    labor_cost: 300.0
+    standards:
+      masterformat: 03 30 00
+      uniformat: B1010
+  MAT-FORMWORK:
+    name: ไม้แบบหล่อคอนกรีต
+    unit: m2
+    material_cost: 250.0
+    labor_cost: 75.0
+    standards:
+      masterformat: 03 11 00
+      uniformat: B1010
+  MAT-015:
+    name: ผนังก่ออิฐมอญครึ่งแผ่น
+    unit: m2
+    material_cost: 150.0
+    labor_cost: 60.0
+    standards:
+      masterformat: 04 20 00
+      uniformat: C1010
+  MAT-017:
+    name: ผนังไม้ฝาตีซ้อนเกล็ด 1/2" x 8"
+    unit: m2
+    material_cost: 350.0
+    labor_cost: 120.0
+    standards:
+      masterformat: 06 20 00
+      uniformat: C1010
+  MAT-021:
+    name: ปูนฉาบเรียบ ภายนอก-ภายใน
+    unit: m2
+    material_cost: 45.0
+    labor_cost: 65.0
+    standards:
+      masterformat: 09 24 00
+      uniformat: C1020
+  MAT-024:
+    name: กระเบื้องดินเผา/เซรามิกปูพื้น
+    unit: m2
+    material_cost: 220.0
+    labor_cost: 100.0
+    standards:
+      masterformat: 09 30 00
+      uniformat: C2010
+  MAT-026:
+    name: พื้นไม้เนื้อแข็ง 1" x 4" เข้าลิ้น
+    unit: m2
+    material_cost: 650.0
+    labor_cost: 150.0
+    standards:
+      masterformat: 09 64 00
+      uniformat: C2020
+  MAT-010:
+    name: ไม้สักแปรรูปทำวงกบและกรอบบาน
+    unit: m2
+    material_cost: 2500.0
+    labor_cost: 350.0
+    standards:
+      masterformat: 06 20 00
+      uniformat: C10
+  MAT-011:
+    name: กระจกใสหนา 5 มม.
+    unit: m2
+    material_cost: 280.0
+    labor_cost: 60.0
+    standards:
+      masterformat: 08 81 00
+      uniformat: B2020
+  MAT-012:
+    name: ประตูไฟเบอร์กลาส/PVC พร้อมวงกบ
+    unit: m2
+    material_cost: 1200.0
+    labor_cost: 200.0
+    standards:
+      masterformat: 08 10 00
+      uniformat: C10
+  MAT-005:
+    name: เหล็กรูปพรรณโครงสร้างหลังคา
+    unit: kg
+    material_cost: 22.0
+    labor_cost: 4.5
+    standards:
+      masterformat: 05 12 00
+      uniformat: B10
+  MAT-001:
+    name: กระเบื้องว่าวซีเมนต์ 13" มุงหลังคา
+    unit: m2
+    material_cost: 175.0
+    labor_cost: 35.0
+    standards:
+      masterformat: 07 31 00
+      uniformat: B10
+  ROOF-STEEL-TRUSS:
+    name: เหล็กโครงสร้างหลังคา (อกไก่ จันทัน ตะเข้สัน)
+    unit: kg
+    material_cost: 22.0
+    labor_cost: 4.5
+    standards:
+      masterformat: 05 12 00
+      uniformat: B1020
+  ROOF-TILE-CONC:
+    name: กระเบื้องว่าวซีเมนต์ 13" มุงหลังคา
+    unit: m2
+    material_cost: 175.0
+    labor_cost: 35.0
+    standards:
+      masterformat: 07 31 00
+      uniformat: B1020
+  ROOF-RIDGE-CAP:
+    name: ครอบสันหลังคา/ครอบตะเฆ่สันปูนทาสี
+    unit: m
+    material_cost: 240.0
+    labor_cost: 40.0
+    standards:
+      masterformat: 07 31 00
+      uniformat: B1020
+  ROOF-FASCIA:
+    name: เชิงชาย 1" x 6" พร้อมไม้ปิดลอน
+    unit: m
+    material_cost: 120.0
+    labor_cost: 25.0
+    standards:
+      masterformat: 06 20 00
+      uniformat: B1020
+  ROOF-INSULATION:
+    name: แผ่นฉนวนฟอยล์กันความร้อนใต้หลังคา
+    unit: m2
+    material_cost: 45.0
+    labor_cost: 15.0
+    standards:
+      masterformat: 07 21 00
+      uniformat: B1020
+  BOQ-001:
+    name: ค่าวัสดุและค่าแรงงานเป็นเงินประมาณ
+    unit: งาน
+    material_cost: 1444555.0
+    labor_cost: 0.0
+  BOQ-002:
+    name: ค่าอำนวยการและดำเนินงาน
+    unit: งาน
+    material_cost: 5.0
+    labor_cost: 72227.75
+  BOQ-003:
+    name: '5.0'
+    unit: งาน
+    material_cost: 72227.75
+    labor_cost: 1.0
+  BOQ-004:
+    name: ค่ากำไร
+    unit: งาน
+    material_cost: 8.0
+    labor_cost: 115564.40000000001
+  BOQ-005:
+    name: '8.0'
+    unit: งาน
+    material_cost: 115564.40000000001
+    labor_cost: 2.0
+  BOQ-006:
+    name: ค่าภาษี
+    unit: งาน
+    material_cost: 7.0
+    labor_cost: 114264.3005
+  BOQ-007:
+    name: '7.0'
+    unit: งาน
+    material_cost: 114264.3005
+    labor_cost: 4.0
+  BOQ-008:
+    name: คิดเป็นเงินประมาณ
+    unit: unit
+    material_cost: 1746000.0
+    labor_cost: 0.0
+  BOQ-009:
+    name: ขนาดหรือเนื้อที่อาคาร
+    unit: unit
+    material_cost: 242.0
+    labor_cost: 0.0
+  BOQ-010:
+    name: เฉลี่ยราคาประมาณ
+    unit: งาน
+    material_cost: 7217.402688016528
+    labor_cost: 0.0
+  BOQ-011:
+    name: ค่าวัสดุและค่าแรงงานเป็นเงินประมาณ
+    unit: งาน
+    material_cost: 1349852.0
+    labor_cost: 0.0
+  BOQ-012:
+    name: ค่าอำนวยการและดำเนินงาน
+    unit: งาน
+    material_cost: 5.0
+    labor_cost: 67492.6
+  BOQ-013:
+    name: '5.0'
+    unit: งาน
+    material_cost: 67492.6
+    labor_cost: 1.0
+  BOQ-014:
+    name: ค่ากำไร
+    unit: งาน
+    material_cost: 8.0
+    labor_cost: 107988.16
+  BOQ-015:
+    name: '8.0'
+    unit: งาน
+    material_cost: 107988.16
+    labor_cost: 2.0
+  BOQ-016:
+    name: ค่าภาษี
+    unit: งาน
+    material_cost: 7.0
+    labor_cost: 106773.29320000001
+  BOQ-017:
+    name: '7.0'
+    unit: งาน
+    material_cost: 106773.29320000001
+    labor_cost: 4.0
+  BOQ-018:
+    name: คิดเป็นเงินประมาณ
+    unit: unit
+    material_cost: 1632000.0
+    labor_cost: 0.0
+  BOQ-019:
+    name: ขนาดหรือเนื้อที่อาคาร
+    unit: unit
+    material_cost: 242.0
+    labor_cost: 0.0
+  BOQ-020:
+    name: เฉลี่ยราคาประมาณ
+    unit: งาน
+    material_cost: 6744.239889256198
+    labor_cost: 0.0
+  BOQ-021:
+    name: 1.1  ขุดดิน
+    unit: ม.
+    material_cost: 75.0
+    labor_cost: 0.0
+  BOQ-022:
+    name: 1.2  เข็มหกเหลี่ยมกลวง ขนาด 0.15 x 0.15 x 6.00 ม.
+    unit: ม.
+    material_cost: 212.0
+    labor_cost: 0.0
+  BOQ-023:
+    name: 1.3  ทรายราดน้ำอัดแน่น
+    unit: ม.
+    material_cost: 6.0
+    labor_cost: 0.0
+  BOQ-024:
+    name: 1.4  คอนกรีตหยาบ  1:3:5
+    unit: ม.
+    material_cost: 4.0
+    labor_cost: 0.0
+  BOQ-025:
+    name: 1.5  คอนกรีตโครงสร้าง  1:2:4
+    unit: ม.
+    material_cost: 66.0
+    labor_cost: 0.0
+  BOQ-026:
+    name: 1.6  เหล็ก  SR   24    Dia    6     มม.
+    unit: ม.
+    material_cost: 597.0
+    labor_cost: 0.0
+  BOQ-027:
+    name: '-  เหล็ก  SR   24    Dia    9     มม.'
+    unit: ม.
+    material_cost: 1718.0
+    labor_cost: 0.0
+  BOQ-028:
+    name: '-  เหล็ก  SR   24   Dia    12     มม.'
+    unit: ม.
+    material_cost: 1094.0
+    labor_cost: 0.0
+  BOQ-029:
+    name: '-  เหล็ก  SR   24   Dia    15     มม.'
+    unit: ม.
+    material_cost: 2362.0
+    labor_cost: 0.0
+  BOQ-030:
+    name: '-  เหล็ก  SR   24   Dia    19     มม.'
+    unit: ม.
+    material_cost: 812.0
+    labor_cost: 0.0
+  BOQ-031:
+    name: '-  ลวดผูกเหล็ก'
+    unit: กก.
+    material_cost: 188.0
+    labor_cost: 0.0
+  BOQ-032:
+    name: 1.7  ไม้แบบ
+    unit: unit
+    material_cost: 205.0
+    labor_cost: 0.0
+  BOQ-033:
+    name: '-  ค่าแรงไม้แบบ'
+    unit: ตร.ม.
+    material_cost: 684.0
+    labor_cost: 0.0
+  BOQ-034:
+    name: '-  ไม้เคร่า'
+    unit: unit
+    material_cost: 62.0
+    labor_cost: 0.0
+  BOQ-035:
+    name: '-  ไม้ค้ำ  Dia   3 x 3.00 ม.'
+    unit: ม.
+    material_cost: 267.0
+    labor_cost: 0.0
+  BOQ-036:
+    name: '-  ตะปู'
+    unit: กก.
+    material_cost: 170.0
+    labor_cost: 0.0
+  BOQ-037:
+    name: '-  [  150 x 75 x 25 x 3.2  มม.'
+    unit: ม.
+    material_cost: 2411.0
+    labor_cost: 0.0
+  BOQ-038:
+    name: '-  [   25 x 25  มม.  หนา  3  มม.'
+    unit: ม.
+    material_cost: 1328.0
+    labor_cost: 0.0
+  BOQ-039:
+    name: '-  ทาสีโครงเหล็ก'
+    unit: ตร.ม.
+    material_cost: 203.0
+    labor_cost: 0.0
+  BOQ-040:
+    name: '- กระเบื้องว่าวซีเมนต์  13"'
+    unit: ตร.ม.
+    material_cost: 246.0
+    labor_cost: 0.0
+  BOQ-041:
+    name: '- ครอบสันหลังคาปูนทาสี'
+    unit: ม.
+    material_cost: 27.0
+    labor_cost: 0.0
+  BOQ-042:
+    name: '- ครอบตะเฆ่สันปูนทาสี'
+    unit: ม.
+    material_cost: 13.0
+    labor_cost: 0.0
+  BOQ-043:
+    name: '- ทับหลังปูนปั้น'
+    unit: ม.
+    material_cost: 16.0
+    labor_cost: 0.0
+  BOQ-044:
+    name: '- ค่าแรงงานมุงกระเบื้องหลังคา'
+    unit: ตร.ม.
+    material_cost: 246.0
+    labor_cost: 0.0
+  BOQ-045:
+    name: '- ปั้นลมไม้เนื้อแข็ง  ขนาด  1"  x  8"'
+    unit: ม.
+    material_cost: 37.0
+    labor_cost: 0.0
+  BOQ-046:
+    name: '- เชิงชายไม้เนื้อแข็ง  ขนาด  1"  x  6"'
+    unit: ม.
+    material_cost: 80.0
+    labor_cost: 0.0
+  BOQ-047:
+    name: '- ไม้ปิดลอน  ขนาด  1"  x  6"'
+    unit: ม.
+    material_cost: 80.0
+    labor_cost: 0.0
+  BOQ-048:
+    name: '- ยิบซั่มบอร์ด หนา 9  มม.  ฉาบรอยต่อเรียบโครงเคร่าเหล็กชุบสังกะสี'
+    unit: ตร.ม.
+    material_cost: 99.0
+    labor_cost: 0.0
+  BOQ-049:
+    name: '- ยิบซั่มบอร์ด หนา 9  มม.  ชนิดกันชื้น  ฉาบรอยต่อเรียบ'
+    unit: ตร.ม.
+    material_cost: 12.0
+    labor_cost: 0.0
+  BOQ-050:
+    name: '- ยิบซั่มบอร์ด หนา 9  มม.  ชนิดบุอลูมิเนียมฟอยล์  ฉาบรอยต่อเรียบ'
+    unit: ตร.ม.
+    material_cost: 70.0
+    labor_cost: 0.0
+  BOQ-051:
+    name: '- ฝ้าชายคาไม้เนื้อแข็ง 1/2" x 2" เว้นร่อง  0.5  ซม. บุตาข่ายกันแมลง'
+    unit: ตร.ม.
+    material_cost: 151.0
+    labor_cost: 0.0
+  BOQ-052:
+    name: '- ฝ้าเพดานฉาบปูนเรียบ'
+    unit: ตร.ม.
+    material_cost: 9.0
+    labor_cost: 0.0
+  BOQ-053:
+    name: '- ฉนวนใยแก้วหุ้มอลูมิเนียมฟอยล์  หนา  3"'
+    unit: ตร.ม.
+    material_cost: 76.0
+    labor_cost: 0.0
+  BOQ-054:
+    name: '- มอบฝ้าไม้เนื้อแข็ง 3/4" x 2"  (ฝ้าชายคา)'
+    unit: ม.
+    material_cost: 79.0
+    labor_cost: 0.0
+  BOQ-055:
+    name: '- ก่ออิฐมอญครึ่งแผ่น'
+    unit: ตร.ม.
+    material_cost: 298.0
+    labor_cost: 0.0
+  BOQ-056:
+    name: '- เสาเอ็นและคานทับหลัง  คสล.'
+    unit: ม.
+    material_cost: 209.0
+    labor_cost: 0.0
+  BOQ-057:
+    name: -ผนังกรุไม้ฝาสำเร็จรูปหรือไม้จริง 1/2" x 8" ตีตามตั้งซ้อนกัน 2.5 ซม.
+    unit: ตร.ม.
+    material_cost: 147.0
+    labor_cost: 0.0
+  BOQ-058:
+    name: '- ผนังบุกระเบื้องเคลือบ ขนาด 8" x 8"'
+    unit: ตร.ม.
+    material_cost: 17.0
+    labor_cost: 0.0
+  BOQ-059:
+    name: '- มุ้งลวดไนล่อนกันแมลง'
+    unit: ตร.ม.
+    material_cost: 7.0
+    labor_cost: 0.0
+  BOQ-060:
+    name: '- ผนังฉาบปูนเรียบ'
+    unit: ตร.ม.
+    material_cost: 398.0
+    labor_cost: 0.0
+  BOQ-061:
+    name: '- ฉาบปูนโครงสร้าง'
+    unit: ตร.ม.
+    material_cost: 111.0
+    labor_cost: 0.0
+  BOQ-062:
+    name: '- พื้นผิวขัดมันเรียบ'
+    unit: ตร.ม.
+    material_cost: 79.0
+    labor_cost: 0.0
+  BOQ-063:
+    name: '- พื้นปูกระเบื้องดินเผาเคลือบด้านขนาด 8" x 8"'
+    unit: ตร.ม.
+    material_cost: 52.0
+    labor_cost: 0.0
+  BOQ-064:
+    name: '- พื้นปูกระเบื้องเคลือบผิวด้านขนาด 8" x 8"'
+    unit: ตร.ม.
+    material_cost: 48.0
+    labor_cost: 0.0
+  BOQ-065:
+    name: '- พื้นปูไม้เนื้อแข็ง 1" x 4" ตีเข้าลิ้น'
+    unit: ตร.ม.
+    material_cost: 54.0
+    labor_cost: 0.0
+  BOQ-066:
+    name: '- บัวเชิงผนังไม้เนื้อแข็ง  3/4"  x  4"'
+    unit: ม.
+    material_cost: 47.0
+    labor_cost: 0.0
+  BOQ-067:
+    name: '- ขัดพื้นไม้เข้าลิ้น'
+    unit: ตร.ม.
+    material_cost: 54.0
+    labor_cost: 0.0
+  BOQ-068:
+    name: '- ป1'
+    unit: ชุด
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-069:
+    name: '- ป2'
+    unit: ชุด
+    material_cost: 3.0
+    labor_cost: 0.0
+  BOQ-070:
+    name: '- ป3'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-071:
+    name: '- ป4'
+    unit: ชุด
+    material_cost: 3.0
+    labor_cost: 0.0
+  BOQ-072:
+    name: '- น1   (ห้องนอน , เอนกประสงค์)'
+    unit: ชุด
+    material_cost: 13.0
+    labor_cost: 0.0
+  BOQ-073:
+    name: '- น2'
+    unit: ชุด
+    material_cost: 4.0
+    labor_cost: 0.0
+  BOQ-074:
+    name: '- น1   (ห้องทั่วไป)'
+    unit: ชุด
+    material_cost: 9.0
+    labor_cost: 0.0
+  BOQ-075:
+    name: '- ขั้นบันไดผิวทรายล้าง'
+    unit: ม.
+    material_cost: 18.0
+    labor_cost: 0.0
+  BOQ-076:
+    name: '- จมูกบันไดอลูมิเนียมสีเงินร่อง PVC ขนาด 2"'
+    unit: ม.
+    material_cost: 18.0
+    labor_cost: 0.0
+  BOQ-077:
+    name: '- พื้นชานพักผิวทรายล้าง'
+    unit: ตร.ม.
+    material_cost: 4.5
+    labor_cost: 0.0
+  BOQ-078:
+    name: '- ราวบันไดไม้'
+    unit: ม.
+    material_cost: 18.0
+    labor_cost: 0.0
+  BOQ-079:
+    name: '- ราวกันตก (ชาน,ระเบียง)'
+    unit: ม.
+    material_cost: 14.0
+    labor_cost: 0.0
+  BOQ-080:
+    name: '- โถส้วมนั่งราบ'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-081:
+    name: '- โถปัสสาวะชาย'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-082:
+    name: '- ฝักบัวอาบน้ำโลหะชุบโครเมี่ยมชนิดก้านแข็ง'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-083:
+    name: '- ฝักบัวชำระสายอ่อน'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-084:
+    name: '- ที่ใส่กระดาษชำระ'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-085:
+    name: '- ที่วางสบู่'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-086:
+    name: '- ราวพาดผ้าเช็ดตัว'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-087:
+    name: '- ห่วงแขวนผ้า'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-088:
+    name: '- หิ้งพลาสติกวางของ'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-089:
+    name: '- กระจกเงา'
+    unit: unit
+    material_cost: 6.0
+    labor_cost: 0.0
+  BOQ-090:
+    name: '- เคาน์เตอร์ คสล.-ผิวบุกระเบื้องเคลือบ'
+    unit: unit
+    material_cost: 1.6
+    labor_cost: 0.0
+  BOQ-091:
+    name: '- สีพลาสติกภายนอก'
+    unit: ตร.ม.
+    material_cost: 294.0
+    labor_cost: 0.0
+  BOQ-092:
+    name: '- สีพลาสติกภายใน'
+    unit: ตร.ม.
+    material_cost: 143.0
+    labor_cost: 0.0
+  BOQ-093:
+    name: '- สีน้ำมันทาไม้'
+    unit: ตร.ม.
+    material_cost: 200.0
+    labor_cost: 0.0
+  BOQ-094:
+    name: '- สีน้ำมันทาเหล็ก'
+    unit: ตร.ม.
+    material_cost: 8.0
+    labor_cost: 0.0
+  BOQ-095:
+    name: '- สีทาพื้นไม้'
+    unit: ตร.ม.
+    material_cost: 54.0
+    labor_cost: 0.0
+  BOQ-096:
+    name: '- เสาบุกระเบื้องเคลือบ ขนาด 8"  x 8"'
+    unit: ตร.ม.
+    material_cost: 77.0
+    labor_cost: 0.0
+  BOQ-097:
+    name: ท่อขนาด  Dia   4"
+    unit: ม.
+    material_cost: 11.0
+    labor_cost: 0.0
+  BOQ-098:
+    name: '- ขนาด  Dia   4"'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-099:
+    name: '- ขนาด  Dia   4"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-100:
+    name: '- ขนาด  Dia   4"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-101:
+    name: '- ขนาด  Dia   4"'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-102:
+    name: ค่าอุปกรณ์ยึดแขวนและทดสอบท่อ
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-103:
+    name: ท่อขนาด  Dia   2"
+    unit: ม.
+    material_cost: 17.0
+    labor_cost: 0.0
+  BOQ-104:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-105:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 7.0
+    labor_cost: 0.0
+  BOQ-106:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 4.0
+    labor_cost: 0.0
+  BOQ-107:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-108:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-109:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-110:
+    name: ค่าอุปกรณ์ยึดแขวนและทดสอบท่อ
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-111:
+    name: ท่อขนาด  Dia   1"
+    unit: ม.
+    material_cost: 8.0
+    labor_cost: 0.0
+  BOQ-112:
+    name: '- ขนาด  Dia   1"'
+    unit: unit
+    material_cost: 3.0
+    labor_cost: 0.0
+  BOQ-113:
+    name: '- ขนาด  Dia   1"'
+    unit: unit
+    material_cost: 5.0
+    labor_cost: 0.0
+  BOQ-114:
+    name: ค่าอุปกรณ์ยึดแขวนและทดสอบท่อ
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-115:
+    name: ท่อขนาด  Dia   3/4"
+    unit: ม.
+    material_cost: 33.0
+    labor_cost: 0.0
+  BOQ-116:
+    name: ท่อขนาด  Dia   1/2"
+    unit: ม.
+    material_cost: 10.0
+    labor_cost: 0.0
+  BOQ-117:
+    name: '- ขนาด  Dia   3/4"'
+    unit: unit
+    material_cost: 3.0
+    labor_cost: 0.0
+  BOQ-118:
+    name: '- ขนาด  Dia   1/2"'
+    unit: unit
+    material_cost: 6.0
+    labor_cost: 0.0
+  BOQ-119:
+    name: '- ขนาด  Dia   3/4"'
+    unit: unit
+    material_cost: 5.0
+    labor_cost: 0.0
+  BOQ-120:
+    name: '- ขนาด  Dia   1/2"'
+    unit: unit
+    material_cost: 9.0
+    labor_cost: 0.0
+  BOQ-121:
+    name: '- ขนาด  Dia   1/2"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-122:
+    name: '- ขนาด  Dia   3/4"'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-123:
+    name: '- ขนาด  Dia   1/2"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-124:
+    name: ค่าอุปกรณ์ยึดแขวนและทดสอบท่อ
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-125:
+    name: '- บ่อบำบัดน้ำเสียสำเร็จรูป ขนาดความจุ 1 ลบ.ม.'
+    unit: ม.
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-126:
+    name: '- แผงขนาด 6 ช่อง พร้อมเมน 32 AT,2P,IC10kA'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-127:
+    name: '- ELCB  32AT ,2P , 30mA'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-128:
+    name: '- MCB  16 AT, 1P'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-129:
+    name: '- Ground  Rod'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-130:
+    name: '- 6  THW'
+    unit: unit
+    material_cost: 10.0
+    labor_cost: 0.0
+  BOQ-131:
+    name: '- 10  THW'
+    unit: unit
+    material_cost: 5.0
+    labor_cost: 0.0
+  BOQ-132:
+    name: '- 2x2.5/1.5 VAF-GRD'
+    unit: unit
+    material_cost: 120.0
+    labor_cost: 0.0
+  BOQ-133:
+    name: -2x1.5 VAF
+    unit: unit
+    material_cost: 100.0
+    labor_cost: 0.0
+  BOQ-134:
+    name: '- Accessories'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-135:
+    name: '- ดวงโคมฟลูออเรสเซนต์ กล่องเหล็กเปลือย หลอด 1-18 W'
+    unit: unit
+    material_cost: 5.0
+    labor_cost: 0.0
+  BOQ-136:
+    name: '- ดวงโคมฟลูออเรสเซนต์ กล่องเหล็กเปลือย หลอด 1-36 W'
+    unit: unit
+    material_cost: 9.0
+    labor_cost: 0.0
+  BOQ-137:
+    name: '- สวิตช์เดี่ยว  16A, 250V'
+    unit: unit
+    material_cost: 13.0
+    labor_cost: 0.0
+  BOQ-138:
+    name: '- สวิตช์สามทาง  16A, 250V'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 0.0
+  BOQ-139:
+    name: '- เต้ารับคู่มีขาดิน  ขนาด   16A, 250V'
+    unit: unit
+    material_cost: 11.0
+    labor_cost: 0.0
+  BOQ-140:
+    name: '- Accessories'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 0.0
+  BOQ-141:
+    name: 1.1  ขุดดิน
+    unit: ม.
+    material_cost: 111.0
+    labor_cost: 0.0
+  BOQ-142:
+    name: 1.2  ทรายราดน้ำอัดแน่น
+    unit: ม.
+    material_cost: 6.0
+    labor_cost: 0.0
+  BOQ-143:
+    name: 1.3  คอนกรีตหยาบ  1:3:5
+    unit: ม.
+    material_cost: 4.0
+    labor_cost: 0.0
+  BOQ-144:
+    name: 1.4  คอนกรีตโครงสร้าง  1:2:4
+    unit: ม.
+    material_cost: 70.0
+    labor_cost: 0.0
+  BOQ-145:
+    name: 1.5  เหล็ก  SR   24    Dia    6     มม.
+    unit: ม.
+    material_cost: 597.0
+    labor_cost: 0.0
+  BOQ-146:
+    name: '-  เหล็ก  SR   24    Dia    9     มม.'
+    unit: ม.
+    material_cost: 1718.0
+    labor_cost: 0.0
+  BOQ-147:
+    name: '-  เหล็ก  SR   24   Dia    12     มม.'
+    unit: ม.
+    material_cost: 1063.0
+    labor_cost: 0.0
+  BOQ-148:
+    name: '-  เหล็ก  SR   24   Dia    15     มม.'
+    unit: ม.
+    material_cost: 2079.0
+    labor_cost: 0.0
+  BOQ-149:
+    name: '-  เหล็ก  SR   24   Dia    19     มม.'
+    unit: ม.
+    material_cost: 812.0
+    labor_cost: 0.0
+  BOQ-150:
+    name: '-  ลวดผูกเหล็ก'
+    unit: กก.
+    material_cost: 188.0
+    labor_cost: 0.0
+  BOQ-151:
+    name: 1.6  ไม้แบบ
+    unit: ตร.ม.
+    material_cost: 205.0
+    labor_cost: 0.0
+  BOQ-152:
+    name: '-  ค่าแรงไม้แบบ'
+    unit: ตร.ม.
+    material_cost: 684.0
+    labor_cost: 0.0
+  BOQ-153:
+    name: '-  ไม้เคร่า'
+    unit: unit
+    material_cost: 62.0
+    labor_cost: 0.0
+  BOQ-154:
+    name: '-  ไม้ค้ำ  Dia   3 x 3.00 ม.'
+    unit: ม.
+    material_cost: 267.0
+    labor_cost: 0.0
+  BOQ-155:
+    name: '-  ตะปู'
+    unit: กก.
+    material_cost: 170.0
+    labor_cost: 0.0
+  BOQ-156:
+    name: '-  [  150 x 75 x 25 x 3.2  มม.'
+    unit: ม.
+    material_cost: 2411.0
+    labor_cost: 0.0
+  BOQ-157:
+    name: '-  [   25 x 25  มม.   หนา   3  มม.'
+    unit: ม.
+    material_cost: 1328.0
+    labor_cost: 0.0
+  BOQ-158:
+    name: '-  ทาสีโครงเหล็ก'
+    unit: ตร.ม.
+    material_cost: 203.0
+    labor_cost: 0.0
+  BOQ-159:
+    name: 2.1  งานหลังคา
+    unit: งาน
+    material_cost: 90075.0
+    labor_cost: 0.0
+  BOQ-160:
+    name: 2.2  งานฝ้าเพดาน
+    unit: งาน
+    material_cost: 151548.0
+    labor_cost: 0.0
+  BOQ-161:
+    name: 2.3  งานผนังและตกแต่งผิวผนัง
+    unit: งาน
+    material_cost: 207376.0
+    labor_cost: 0.0
+  BOQ-162:
+    name: 2.4  งานพื้นและตกแต่งผิวพื้น
+    unit: งาน
+    material_cost: 86193.0
+    labor_cost: 0.0
+  BOQ-163:
+    name: 2.6  งานบันไดและราวบันได
+    unit: งาน
+    material_cost: 24830.0
+    labor_cost: 0.0
+  BOQ-164:
+    name: 2.7  งานสุขภัณฑ์
+    unit: งาน
+    material_cost: 23094.0
+    labor_cost: 0.0
+  BOQ-165:
+    name: 2.8  งานทาสี
+    unit: งาน
+    material_cost: 49136.0
+    labor_cost: 0.0
+  BOQ-166:
+    name: 2.9  งานเบ็ดเตล็ด
+    unit: งาน
+    material_cost: 25795.0
+    labor_cost: 0.0
+  BOQ-167:
+    name: '- กระเบื้องว่าวซีเมนต์  13"'
+    unit: ตร.ม.
+    material_cost: 246.0
+    labor_cost: 175.0
+  BOQ-168:
+    name: '246.0'
+    unit: ตร.ม.
+    material_cost: 175.0
+    labor_cost: 43050.0
+  BOQ-169:
+    name: '- ครอบสันหลังคาปูนทาสี'
+    unit: ม.
+    material_cost: 27.0
+    labor_cost: 240.0
+  BOQ-170:
+    name: '27.0'
+    unit: ม.
+    material_cost: 240.0
+    labor_cost: 6480.0
+  BOQ-171:
+    name: '- ครอบตะเฆ่สันปูนทาสี'
+    unit: ม.
+    material_cost: 13.0
+    labor_cost: 240.0
+  BOQ-172:
+    name: '13.0'
+    unit: ม.
+    material_cost: 240.0
+    labor_cost: 3120.0
+  BOQ-173:
+    name: '- ทับหลังปูนปั้น'
+    unit: ม.
+    material_cost: 16.0
+    labor_cost: 240.0
+  BOQ-174:
+    name: '16.0'
+    unit: ม.
+    material_cost: 240.0
+    labor_cost: 3840.0
+  BOQ-175:
+    name: '- ค่าแรงงานมุงกระเบื้องหลังคา'
+    unit: ตร.ม.
+    material_cost: 246.0
+    labor_cost: 23.0
+  BOQ-176:
+    name: '246.0'
+    unit: ตร.ม.
+    material_cost: 23.0
+    labor_cost: 5658.0
+  BOQ-177:
+    name: '- ปั้นลมไม้เนื้อแข็ง  ขนาด  1"  x  8"'
+    unit: ม.
+    material_cost: 37.0
+    labor_cost: 156.0
+  BOQ-178:
+    name: '37.0'
+    unit: ม.
+    material_cost: 156.0
+    labor_cost: 5772.0
+  BOQ-179:
+    name: '- เชิงชายไม้เนื้อแข็ง  ขนาด  1"  x  6"'
+    unit: ม.
+    material_cost: 80.0
+    labor_cost: 120.0
+  BOQ-180:
+    name: '80.0'
+    unit: ม.
+    material_cost: 120.0
+    labor_cost: 9600.0
+  BOQ-181:
+    name: '- ไม้ปิดลอน  ขนาด  1"  x  6"'
+    unit: ม.
+    material_cost: 80.0
+    labor_cost: 120.0
+  BOQ-182:
+    name: '80.0'
+    unit: ม.
+    material_cost: 120.0
+    labor_cost: 9600.0
+  BOQ-183:
+    name: '- ยิบซั่มบอร์ด หนา 9  มม.  ฉาบรอยต่อเรียบโครงเคร่าเหล็กชุบสังกะสี'
+    unit: ตร.ม.
+    material_cost: 99.0
+    labor_cost: 260.0
+  BOQ-184:
+    name: '99.0'
+    unit: ตร.ม.
+    material_cost: 260.0
+    labor_cost: 25740.0
+  BOQ-185:
+    name: '- ยิบซั่มบอร์ด หนา 9  มม.  ชนิดกันชื้น  ฉาบรอยต่อเรียบ'
+    unit: ตร.ม.
+    material_cost: 12.0
+    labor_cost: 280.0
+  BOQ-186:
+    name: '12.0'
+    unit: ตร.ม.
+    material_cost: 280.0
+    labor_cost: 3360.0
+  BOQ-187:
+    name: '- ยิบซั่มบอร์ด หนา 9  มม.  ชนิดบุอลูมิเนียมฟอยล์  ฉาบรอยต่อเรียบ'
+    unit: ตร.ม.
+    material_cost: 70.0
+    labor_cost: 280.0
+  BOQ-188:
+    name: '70.0'
+    unit: ตร.ม.
+    material_cost: 280.0
+    labor_cost: 19600.0
+  BOQ-189:
+    name: '- ฝ้าชายคาไม้เนื้อแข็ง 1/2" x 2" เว้นร่อง  0.5  ซม. บุตาข่ายกันแมลง'
+    unit: ตร.ม.
+    material_cost: 151.0
+    labor_cost: 571.0
+  BOQ-190:
+    name: '151.0'
+    unit: ตร.ม.
+    material_cost: 571.0
+    labor_cost: 86221.0
+  BOQ-191:
+    name: '- ฝ้าเพดานฉาบปูนเรียบ'
+    unit: ตร.ม.
+    material_cost: 9.0
+    labor_cost: 51.0
+  BOQ-192:
+    name: '9.0'
+    unit: ตร.ม.
+    material_cost: 51.0
+    labor_cost: 459.0
+  BOQ-193:
+    name: '- ฉนวนใยแก้วหุ้มอลูมิเนียมฟอยล์  หนา  3"'
+    unit: ตร.ม.
+    material_cost: 76.0
+    labor_cost: 145.0
+  BOQ-194:
+    name: '76.0'
+    unit: ตร.ม.
+    material_cost: 145.0
+    labor_cost: 11020.0
+  BOQ-195:
+    name: '- มอบฝ้าไม้เนื้อแข็ง 3/4" x 2"  (ฝ้าชายคา)'
+    unit: ม.
+    material_cost: 79.0
+    labor_cost: 25.0
+  BOQ-196:
+    name: '79.0'
+    unit: ม.
+    material_cost: 25.0
+    labor_cost: 1975.0
+  BOQ-197:
+    name: '- ก่ออิฐมอญครึ่งแผ่น'
+    unit: ตร.ม.
+    material_cost: 298.0
+    labor_cost: 148.0
+  BOQ-198:
+    name: '298.0'
+    unit: ตร.ม.
+    material_cost: 148.0
+    labor_cost: 44104.0
+  BOQ-199:
+    name: '- เสาเอ็นและคานทับหลัง  คสล.'
+    unit: ม.
+    material_cost: 209.0
+    labor_cost: 113.0
+  BOQ-200:
+    name: '209.0'
+    unit: ม.
+    material_cost: 113.0
+    labor_cost: 23617.0
+  BOQ-201:
+    name: -ผนังกรุไม้ฝาสำเร็จรูปหรือไม้จริง 1/2" x 8" ตีตามตั้งซ้อนกัน 2.5 ซม.
+    unit: ตร.ม.
+    material_cost: 147.0
+    labor_cost: 415.0
+  BOQ-202:
+    name: '147.0'
+    unit: ตร.ม.
+    material_cost: 415.0
+    labor_cost: 61005.0
+  BOQ-203:
+    name: '- ผนังบุกระเบื้องเคลือบ ขนาด 8" x 8"'
+    unit: ตร.ม.
+    material_cost: 17.0
+    labor_cost: 220.0
+  BOQ-204:
+    name: '17.0'
+    unit: ตร.ม.
+    material_cost: 220.0
+    labor_cost: 3740.0
+  BOQ-205:
+    name: '4.0'
+    unit: ชุด
+    material_cost: 1445.0
+    labor_cost: 5780.0
+  BOQ-206:
+    name: '- มุ้งลวดไนล่อนกันแมลง'
+    unit: ตร.ม.
+    material_cost: 7.0
+    labor_cost: 50.0
+  BOQ-207:
+    name: '7.0'
+    unit: ตร.ม.
+    material_cost: 50.0
+    labor_cost: 350.0
+  BOQ-208:
+    name: '- ผนังฉาบปูนเรียบ'
+    unit: ตร.ม.
+    material_cost: 398.0
+    labor_cost: 51.0
+  BOQ-209:
+    name: '398.0'
+    unit: ตร.ม.
+    material_cost: 51.0
+    labor_cost: 20298.0
+  BOQ-210:
+    name: '- ฉาบปูนโครงสร้าง'
+    unit: ตร.ม.
+    material_cost: 111.0
+    labor_cost: 51.0
+  BOQ-211:
+    name: '111.0'
+    unit: ตร.ม.
+    material_cost: 51.0
+    labor_cost: 5661.0
+  BOQ-212:
+    name: '- พื้นผิวขัดมันเรียบ'
+    unit: ตร.ม.
+    material_cost: 79.0
+    labor_cost: 44.0
+  BOQ-213:
+    name: '79.0'
+    unit: ตร.ม.
+    material_cost: 44.0
+    labor_cost: 3476.0
+  BOQ-214:
+    name: '- พื้นปูกระเบื้องดินเผาเคลือบด้านขนาด 8" x 8"'
+    unit: ตร.ม.
+    material_cost: 52.0
+    labor_cost: 308.0
+  BOQ-215:
+    name: '52.0'
+    unit: ตร.ม.
+    material_cost: 308.0
+    labor_cost: 16016.0
+  BOQ-216:
+    name: '- พื้นปูกระเบื้องเคลือบผิวด้านขนาด 8" x 8"'
+    unit: ตร.ม.
+    material_cost: 48.0
+    labor_cost: 229.0
+  BOQ-217:
+    name: '48.0'
+    unit: ตร.ม.
+    material_cost: 229.0
+    labor_cost: 10992.0
+  BOQ-218:
+    name: '- พื้นปูไม้เนื้อแข็ง 1" x 4" ตีเข้าลิ้น'
+    unit: ตร.ม.
+    material_cost: 54.0
+    labor_cost: 580.0
+  BOQ-219:
+    name: '54.0'
+    unit: ตร.ม.
+    material_cost: 580.0
+    labor_cost: 31320.0
+  BOQ-220:
+    name: '- บัวเชิงผนังไม้เนื้อแข็ง  3/4"  x  4"'
+    unit: ม.
+    material_cost: 47.0
+    labor_cost: 45.0
+  BOQ-221:
+    name: '47.0'
+    unit: ม.
+    material_cost: 45.0
+    labor_cost: 2115.0
+  BOQ-222:
+    name: '- ขัดพื้นไม้เข้าลิ้น'
+    unit: ตร.ม.
+    material_cost: 54.0
+    labor_cost: 104.0
+  BOQ-223:
+    name: '54.0'
+    unit: ตร.ม.
+    material_cost: 104.0
+    labor_cost: 5616.0
+  BOQ-224:
+    name: '- ป1'
+    unit: ชุด
+    material_cost: 1.0
+    labor_cost: 7572.0
+  BOQ-225:
+    name: '1.0'
+    unit: ชุด
+    material_cost: 7572.0
+    labor_cost: 7572.0
+  BOQ-226:
+    name: '- ป2'
+    unit: ชุด
+    material_cost: 3.0
+    labor_cost: 7744.0
+  BOQ-227:
+    name: '3.0'
+    unit: ชุด
+    material_cost: 7744.0
+    labor_cost: 23232.0
+  BOQ-228:
+    name: '- ป3'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 5470.0
+  BOQ-229:
+    name: '2.0'
+    unit: ชุด
+    material_cost: 5470.0
+    labor_cost: 10940.0
+  BOQ-230:
+    name: '- ป4'
+    unit: ชุด
+    material_cost: 3.0
+    labor_cost: 5487.0
+  BOQ-231:
+    name: '3.0'
+    unit: ชุด
+    material_cost: 5487.0
+    labor_cost: 16461.0
+  BOQ-232:
+    name: '- น1   (ห้องนอน , เอนกประสงค์)'
+    unit: ชุด
+    material_cost: 13.0
+    labor_cost: 3469.0
+  BOQ-233:
+    name: '13.0'
+    unit: ชุด
+    material_cost: 3469.0
+    labor_cost: 45097.0
+  BOQ-234:
+    name: '- น2'
+    unit: ชุด
+    material_cost: 4.0
+    labor_cost: 1776.0
+  BOQ-235:
+    name: '4.0'
+    unit: ชุด
+    material_cost: 1776.0
+    labor_cost: 7104.0
+  BOQ-236:
+    name: '- น1   (ห้องทั่วไป)'
+    unit: ชุด
+    material_cost: 9.0
+    labor_cost: 3180.0
+  BOQ-237:
+    name: '9.0'
+    unit: ชุด
+    material_cost: 3180.0
+    labor_cost: 28620.0
+  BOQ-238:
+    name: '- ขั้นบันไดผิวทรายล้าง'
+    unit: ม.
+    material_cost: 18.0
+    labor_cost: 380.0
+  BOQ-239:
+    name: '18.0'
+    unit: ม.
+    material_cost: 380.0
+    labor_cost: 6840.0
+  BOQ-240:
+    name: '- จมูกบันไดอลูมิเนียมสีเงินร่อง PVC ขนาด 2"'
+    unit: ม.
+    material_cost: 18.0
+    labor_cost: 165.0
+  BOQ-241:
+    name: '18.0'
+    unit: ม.
+    material_cost: 165.0
+    labor_cost: 2970.0
+  BOQ-242:
+    name: '- พื้นชานพักผิวทรายล้าง'
+    unit: ตร.ม.
+    material_cost: 4.5
+    labor_cost: 380.0
+  BOQ-243:
+    name: '4.5'
+    unit: ตร.ม.
+    material_cost: 380.0
+    labor_cost: 1710.0
+  BOQ-244:
+    name: '- ราวบันไดไม้'
+    unit: ม.
+    material_cost: 18.0
+    labor_cost: 335.0
+  BOQ-245:
+    name: '18.0'
+    unit: ม.
+    material_cost: 335.0
+    labor_cost: 6030.0
+  BOQ-246:
+    name: '- ราวกันตก (ชาน,ระเบียง)'
+    unit: ม.
+    material_cost: 14.0
+    labor_cost: 520.0
+  BOQ-247:
+    name: '14.0'
+    unit: ม.
+    material_cost: 520.0
+    labor_cost: 7280.0
+  BOQ-248:
+    name: '- โถส้วมนั่งราบ'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 2550.0
+  BOQ-249:
+    name: '2.0'
+    unit: ชุด
+    material_cost: 2550.0
+    labor_cost: 5100.0
+  BOQ-250:
+    name: '- โถปัสสาวะชาย'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 3005.0
+  BOQ-251:
+    name: '2.0'
+    unit: ชุด
+    material_cost: 3005.0
+    labor_cost: 6010.0
+  BOQ-252:
+    name: '2.0'
+    unit: ชุด
+    material_cost: 1665.0
+    labor_cost: 3330.0
+  BOQ-253:
+    name: '- ฝักบัวอาบน้ำโลหะชุบโครเมี่ยมชนิดก้านแข็ง'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 670.0
+  BOQ-254:
+    name: '2.0'
+    unit: ชุด
+    material_cost: 670.0
+    labor_cost: 1340.0
+  BOQ-255:
+    name: '- ฝักบัวชำระสายอ่อน'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 190.0
+  BOQ-256:
+    name: '2.0'
+    unit: ชุด
+    material_cost: 190.0
+    labor_cost: 380.0
+  BOQ-257:
+    name: '- ที่ใส่กระดาษชำระ'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 94.0
+  BOQ-258:
+    name: '2.0'
+    unit: ชุด
+    material_cost: 94.0
+    labor_cost: 188.0
+  BOQ-259:
+    name: '- ที่วางสบู่'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 94.0
+  BOQ-260:
+    name: '2.0'
+    unit: ชุด
+    material_cost: 94.0
+    labor_cost: 188.0
+  BOQ-261:
+    name: '- ราวพาดผ้าเช็ดตัว'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 370.0
+  BOQ-262:
+    name: '2.0'
+    unit: ชุด
+    material_cost: 370.0
+    labor_cost: 740.0
+  BOQ-263:
+    name: '- ห่วงแขวนผ้า'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 180.0
+  BOQ-264:
+    name: '2.0'
+    unit: ชุด
+    material_cost: 180.0
+    labor_cost: 360.0
+  BOQ-265:
+    name: '- หิ้งพลาสติกวางของ'
+    unit: ชุด
+    material_cost: 2.0
+    labor_cost: 160.0
+  BOQ-266:
+    name: '2.0'
+    unit: ชุด
+    material_cost: 160.0
+    labor_cost: 320.0
+  BOQ-267:
+    name: '- กระจกเงา'
+    unit: unit
+    material_cost: 6.0
+    labor_cost: 140.0
+  BOQ-268:
+    name: '6.0'
+    unit: unit
+    material_cost: 140.0
+    labor_cost: 840.0
+  BOQ-269:
+    name: '- เคาน์เตอร์ คสล.-ผิวบุกระเบื้องเคลือบ'
+    unit: unit
+    material_cost: 1.6
+    labor_cost: 980.0
+  BOQ-270:
+    name: '1.6'
+    unit: unit
+    material_cost: 980.0
+    labor_cost: 1568.0
+  BOQ-271:
+    name: '- สีพลาสติกภายนอก'
+    unit: ตร.ม.
+    material_cost: 294.0
+    labor_cost: 30.0
+  BOQ-272:
+    name: '294.0'
+    unit: ตร.ม.
+    material_cost: 30.0
+    labor_cost: 8820.0
+  BOQ-273:
+    name: '- สีพลาสติกภายใน'
+    unit: ตร.ม.
+    material_cost: 143.0
+    labor_cost: 25.0
+  BOQ-274:
+    name: '143.0'
+    unit: ตร.ม.
+    material_cost: 25.0
+    labor_cost: 3575.0
+  BOQ-275:
+    name: '- สีน้ำมันทาไม้'
+    unit: ตร.ม.
+    material_cost: 200.0
+    labor_cost: 35.0
+  BOQ-276:
+    name: '200.0'
+    unit: ตร.ม.
+    material_cost: 35.0
+    labor_cost: 7000.0
+  BOQ-277:
+    name: '- สีน้ำมันทาเหล็ก'
+    unit: ตร.ม.
+    material_cost: 8.0
+    labor_cost: 40.0
+  BOQ-278:
+    name: '8.0'
+    unit: ตร.ม.
+    material_cost: 40.0
+    labor_cost: 320.0
+  BOQ-279:
+    name: '- สีทาพื้นไม้'
+    unit: ตร.ม.
+    material_cost: 54.0
+    labor_cost: 40.0
+  BOQ-280:
+    name: '54.0'
+    unit: ตร.ม.
+    material_cost: 40.0
+    labor_cost: 2160.0
+  BOQ-281:
+    name: '- เสาบุกระเบื้องเคลือบ ขนาด 8"  x 8"'
+    unit: ตร.ม.
+    material_cost: 77.0
+    labor_cost: 220.0
+  BOQ-282:
+    name: '77.0'
+    unit: ตร.ม.
+    material_cost: 220.0
+    labor_cost: 16940.0
+  BOQ-283:
+    name: 3.1  งานเดินท่อโสโครก  (PVC  8.5)
+    unit: งาน
+    material_cost: 4034.0
+    labor_cost: 0.0
+  BOQ-284:
+    name: 3.2  งานเดินท่อน้ำทิ้ง  (PVC  8.5)
+    unit: งาน
+    material_cost: 3196.0
+    labor_cost: 0.0
+  BOQ-285:
+    name: 3.3  งานเดินท่ออากาศ  (PVC 8.5)
+    unit: งาน
+    material_cost: 941.0
+    labor_cost: 0.0
+  BOQ-286:
+    name: 3.4  งานเดินท่อประปา  (PVC  13.5)
+    unit: งาน
+    material_cost: 3660.0
+    labor_cost: 0.0
+  BOQ-287:
+    name: 3.5  งานระบายน้ำและบำบัดน้ำเสียรอบอาคาร
+    unit: งาน
+    material_cost: 4800.0
+    labor_cost: 0.0
+  BOQ-288:
+    name: ท่อขนาด  Dia   4"
+    unit: ม.
+    material_cost: 11.0
+    labor_cost: 114.0
+  BOQ-289:
+    name: '11.0'
+    unit: ม.
+    material_cost: 114.0
+    labor_cost: 1254.0
+  BOQ-290:
+    name: '- ขนาด  Dia   4"'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 161.0
+  BOQ-291:
+    name: '1.0'
+    unit: unit
+    material_cost: 161.0
+    labor_cost: 161.0
+  BOQ-292:
+    name: '- ขนาด  Dia   4"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 71.0
+  BOQ-293:
+    name: '2.0'
+    unit: unit
+    material_cost: 71.0
+    labor_cost: 142.0
+  BOQ-294:
+    name: '- ขนาด  Dia   4"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 71.0
+  BOQ-295:
+    name: '2.0'
+    unit: unit
+    material_cost: 71.0
+    labor_cost: 142.0
+  BOQ-296:
+    name: '- ขนาด  Dia   4"'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 800.0
+  BOQ-297:
+    name: '1.0'
+    unit: unit
+    material_cost: 800.0
+    labor_cost: 800.0
+  BOQ-298:
+    name: ค่าอุปกรณ์ยึดแขวนและทดสอบท่อ
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 800.0
+  BOQ-299:
+    name: '1.0'
+    unit: unit
+    material_cost: 800.0
+    labor_cost: 800.0
+  BOQ-300:
+    name: ท่อขนาด  Dia   2"
+    unit: ม.
+    material_cost: 17.0
+    labor_cost: 32.0
+  BOQ-301:
+    name: '17.0'
+    unit: ม.
+    material_cost: 32.0
+    labor_cost: 544.0
+  BOQ-302:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 35.0
+  BOQ-303:
+    name: '2.0'
+    unit: unit
+    material_cost: 35.0
+    labor_cost: 70.0
+  BOQ-304:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 7.0
+    labor_cost: 10.0
+  BOQ-305:
+    name: '7.0'
+    unit: unit
+    material_cost: 10.0
+    labor_cost: 70.0
+  BOQ-306:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 4.0
+    labor_cost: 12.0
+  BOQ-307:
+    name: '4.0'
+    unit: unit
+    material_cost: 12.0
+    labor_cost: 48.0
+  BOQ-308:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 82.0
+  BOQ-309:
+    name: '2.0'
+    unit: unit
+    material_cost: 82.0
+    labor_cost: 164.0
+  BOQ-310:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 290.0
+  BOQ-311:
+    name: '2.0'
+    unit: unit
+    material_cost: 290.0
+    labor_cost: 580.0
+  BOQ-312:
+    name: '- ขนาด  Dia   2"'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 400.0
+  BOQ-313:
+    name: '1.0'
+    unit: unit
+    material_cost: 400.0
+    labor_cost: 400.0
+  BOQ-314:
+    name: ค่าอุปกรณ์ยึดแขวนและทดสอบท่อ
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 600.0
+  BOQ-315:
+    name: '1.0'
+    unit: unit
+    material_cost: 600.0
+    labor_cost: 600.0
+  BOQ-316:
+    name: ท่อขนาด  Dia   1"
+    unit: ม.
+    material_cost: 8.0
+    labor_cost: 13.0
+  BOQ-317:
+    name: '8.0'
+    unit: ม.
+    material_cost: 13.0
+    labor_cost: 104.0
+  BOQ-318:
+    name: '- ขนาด  Dia   1"'
+    unit: unit
+    material_cost: 3.0
+    labor_cost: 9.0
+  BOQ-319:
+    name: '3.0'
+    unit: unit
+    material_cost: 9.0
+    labor_cost: 27.0
+  BOQ-320:
+    name: '- ขนาด  Dia   1"'
+    unit: unit
+    material_cost: 5.0
+    labor_cost: 6.0
+  BOQ-321:
+    name: '5.0'
+    unit: unit
+    material_cost: 6.0
+    labor_cost: 30.0
+  BOQ-322:
+    name: ค่าอุปกรณ์ยึดแขวนและทดสอบท่อ
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 500.0
+  BOQ-323:
+    name: '1.0'
+    unit: unit
+    material_cost: 500.0
+    labor_cost: 500.0
+  BOQ-324:
+    name: ท่อขนาด  Dia   3/4"
+    unit: ม.
+    material_cost: 33.0
+    labor_cost: 16.0
+  BOQ-325:
+    name: '33.0'
+    unit: ม.
+    material_cost: 16.0
+    labor_cost: 528.0
+  BOQ-326:
+    name: ท่อขนาด  Dia   1/2"
+    unit: ม.
+    material_cost: 10.0
+    labor_cost: 10.0
+  BOQ-327:
+    name: '10.0'
+    unit: ม.
+    material_cost: 10.0
+    labor_cost: 100.0
+  BOQ-328:
+    name: '- ขนาด  Dia   3/4"'
+    unit: unit
+    material_cost: 3.0
+    labor_cost: 7.0
+  BOQ-329:
+    name: '3.0'
+    unit: unit
+    material_cost: 7.0
+    labor_cost: 21.0
+  BOQ-330:
+    name: '- ขนาด  Dia   1/2"'
+    unit: unit
+    material_cost: 6.0
+    labor_cost: 5.0
+  BOQ-331:
+    name: '6.0'
+    unit: unit
+    material_cost: 5.0
+    labor_cost: 30.0
+  BOQ-332:
+    name: '- ขนาด  Dia   3/4"'
+    unit: unit
+    material_cost: 5.0
+    labor_cost: 6.0
+  BOQ-333:
+    name: '5.0'
+    unit: unit
+    material_cost: 6.0
+    labor_cost: 30.0
+  BOQ-334:
+    name: '- ขนาด  Dia   1/2"'
+    unit: unit
+    material_cost: 9.0
+    labor_cost: 4.0
+  BOQ-335:
+    name: '9.0'
+    unit: unit
+    material_cost: 4.0
+    labor_cost: 36.0
+  BOQ-336:
+    name: '- ขนาด  Dia   1/2"'
+    unit: unit
+    material_cost: 5000.0
+    labor_cost: 0.0
+  BOQ-337:
+    name: '0.0'
+    unit: unit
+    material_cost: 5000.0
+    labor_cost: 0.0
+  BOQ-338:
+    name: '- ขนาด  Dia   1/2"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 125.0
+  BOQ-339:
+    name: '2.0'
+    unit: unit
+    material_cost: 125.0
+    labor_cost: 250.0
+  BOQ-340:
+    name: '- ขนาด  Dia   3/4"'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 180.0
+  BOQ-341:
+    name: '1.0'
+    unit: unit
+    material_cost: 180.0
+    labor_cost: 180.0
+  BOQ-342:
+    name: '- ขนาด  Dia   1/2"'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 80.0
+  BOQ-343:
+    name: '2.0'
+    unit: unit
+    material_cost: 80.0
+    labor_cost: 160.0
+  BOQ-344:
+    name: ค่าอุปกรณ์ยึดแขวนและทดสอบท่อ
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 1200.0
+  BOQ-345:
+    name: '1.0'
+    unit: unit
+    material_cost: 1200.0
+    labor_cost: 1200.0
+  BOQ-346:
+    name: '- ท่อ  AC  Dia  8"'
+    unit: ม.
+    material_cost: 50.0
+    labor_cost: 20.0
+  BOQ-347:
+    name: '0.0'
+    unit: ม.
+    material_cost: 50.0
+    labor_cost: 20.0
+  BOQ-348:
+    name: '- บ่อพักท่อสำเร็จรูป ขนาด  0.40 x 0.40  ม.'
+    unit: ม.
+    material_cost: 250.0
+    labor_cost: 100.0
+  BOQ-349:
+    name: '0.0'
+    unit: ม.
+    material_cost: 250.0
+    labor_cost: 100.0
+  BOQ-350:
+    name: '- บ่อดักไขมัน  ความจุ  30  ลิตร'
+    unit: unit
+    material_cost: 6000.0
+    labor_cost: 0.0
+  BOQ-351:
+    name: '0.0'
+    unit: unit
+    material_cost: 6000.0
+    labor_cost: 0.0
+  BOQ-352:
+    name: '- บ่อบำบัดน้ำเสียสำเร็จรูป ขนาดความจุ 1 ลบ.ม.'
+    unit: ม.
+    material_cost: 1.0
+    labor_cost: 4800.0
+  BOQ-353:
+    name: '1.0'
+    unit: ม.
+    material_cost: 4800.0
+    labor_cost: 4800.0
+  BOQ-354:
+    name: 4.1  แผงสวิตช์อัตโนมัติเมน  (LP)
+    unit: unit
+    material_cost: 4100.0
+    labor_cost: 0.0
+  BOQ-355:
+    name: 4.2  สายไฟฟ้า
+    unit: unit
+    material_cost: 4135.0
+    labor_cost: 0.0
+  BOQ-356:
+    name: 4.3  ดวงโคม สวิตช์ เต้ารับ
+    unit: unit
+    material_cost: 8535.0
+    labor_cost: 0.0
+  BOQ-357:
+    name: '- แผงขนาด 6 ช่อง พร้อมเมน 32 AT,2P,IC10kA'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 1500.0
+  BOQ-358:
+    name: '1.0'
+    unit: unit
+    material_cost: 1500.0
+    labor_cost: 1500.0
+  BOQ-359:
+    name: '- ELCB  32AT ,2P , 30mA'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 1200.0
+  BOQ-360:
+    name: '1.0'
+    unit: unit
+    material_cost: 1200.0
+    labor_cost: 1200.0
+  BOQ-361:
+    name: '- MCB  16 AT, 1P'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 150.0
+  BOQ-362:
+    name: '2.0'
+    unit: unit
+    material_cost: 150.0
+    labor_cost: 300.0
+  BOQ-363:
+    name: '- Ground  Rod'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 500.0
+  BOQ-364:
+    name: '1.0'
+    unit: unit
+    material_cost: 500.0
+    labor_cost: 500.0
+  BOQ-365:
+    name: '0.0'
+    unit: งาน
+    material_cost: 4100.0
+    labor_cost: 0.0
+  BOQ-366:
+    name: '- 6  THW'
+    unit: unit
+    material_cost: 10.0
+    labor_cost: 11.0
+  BOQ-367:
+    name: '10.0'
+    unit: unit
+    material_cost: 11.0
+    labor_cost: 110.0
+  BOQ-368:
+    name: '- 10  THW'
+    unit: unit
+    material_cost: 5.0
+    labor_cost: 17.0
+  BOQ-369:
+    name: '5.0'
+    unit: unit
+    material_cost: 17.0
+    labor_cost: 85.0
+  BOQ-370:
+    name: '- 2x2.5/1.5 VAF-GRD'
+    unit: unit
+    material_cost: 120.0
+    labor_cost: 15.0
+  BOQ-371:
+    name: '120.0'
+    unit: unit
+    material_cost: 15.0
+    labor_cost: 1800.0
+  BOQ-372:
+    name: -2x1.5 VAF
+    unit: unit
+    material_cost: 100.0
+    labor_cost: 5.0
+  BOQ-373:
+    name: '100.0'
+    unit: unit
+    material_cost: 5.0
+    labor_cost: 500.0
+  BOQ-374:
+    name: '- Accessories'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 200.0
+  BOQ-375:
+    name: '1.0'
+    unit: unit
+    material_cost: 200.0
+    labor_cost: 200.0
+  BOQ-376:
+    name: '- ดวงโคมฟลูออเรสเซนต์ กล่องเหล็กเปลือย หลอด 1-18 W'
+    unit: unit
+    material_cost: 5.0
+    labor_cost: 180.0
+  BOQ-377:
+    name: '5.0'
+    unit: unit
+    material_cost: 180.0
+    labor_cost: 900.0
+  BOQ-378:
+    name: '- ดวงโคมฟลูออเรสเซนต์ กล่องเหล็กเปลือย หลอด 1-36 W'
+    unit: unit
+    material_cost: 9.0
+    labor_cost: 230.0
+  BOQ-379:
+    name: '9.0'
+    unit: unit
+    material_cost: 230.0
+    labor_cost: 2070.0
+  BOQ-380:
+    name: '- สวิตช์เดี่ยว  16A, 250V'
+    unit: unit
+    material_cost: 13.0
+    labor_cost: 60.0
+  BOQ-381:
+    name: '13.0'
+    unit: unit
+    material_cost: 60.0
+    labor_cost: 780.0
+  BOQ-382:
+    name: '- สวิตช์สามทาง  16A, 250V'
+    unit: unit
+    material_cost: 2.0
+    labor_cost: 80.0
+  BOQ-383:
+    name: '2.0'
+    unit: unit
+    material_cost: 80.0
+    labor_cost: 160.0
+  BOQ-384:
+    name: '- เต้ารับคู่มีขาดิน  ขนาด   16A, 250V'
+    unit: unit
+    material_cost: 11.0
+    labor_cost: 155.0
+  BOQ-385:
+    name: '11.0'
+    unit: unit
+    material_cost: 155.0
+    labor_cost: 1705.0
+  BOQ-386:
+    name: '- Accessories'
+    unit: unit
+    material_cost: 1.0
+    labor_cost: 500.0
+  BOQ-387:
+    name: '1.0'
+    unit: unit
+    material_cost: 500.0
+    labor_cost: 500.0
+  BOQ-388:
+    name: '0.0'
+    unit: งาน
+    material_cost: 8535.0
+    labor_cost: 0.0
