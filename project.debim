@@ -1,0 +1,2341 @@
+schema: IFC4-Minimal
+project:
+  id: PRJ-ISAN-HERITAGE-462105
+  name: แบบบ้านไทยอนุรักษ์ไทย ภาคอีสาน (มบ. 462105)
+  units:
+    length: METER
+    area: SQUARE_METER
+    volume: CUBIC_METER
+site:
+  bounding_box:
+  - -3.0
+  - -3.0
+  - 16.5
+  - 18.0
+  front_road_width: 6.0
+compliances:
+- rule: TH_MIN_CEILING_HEIGHT_240
+  name: ความสูงเพดานขั้นต่ำ 2.40 ม. สำหรับห้องพักอาศัย
+  threshold: 2.6
+- rule: TH_SETBACK_OPENINGS_200
+  name: ระยะร่นผนังมีช่องเปิดขั้นต่ำ 2.00 ม.
+  threshold: 2.0
+- rule: TH_SETBACK_BLIND_050
+  name: ระยะร่นผนังทึบขั้นต่ำ 0.50 ม.
+  threshold: 0.5
+- rule: NO_STRUCTURAL_CLASHES
+  name: ไม่มีการชนกันขององค์ประกอบโครงสร้าง 3D
+spatial_structure:
+  storeys:
+  - id: FOUNDATION
+    name: ระดับฐานรากและเสาตอม่อ (-0.95m)
+    elevation: -0.95
+    height: 0.95
+  - id: L1
+    name: ชั้นล่าง (ระดับดิน ±0.00m / ทางเดินเอนกประสงค์ +0.10m)
+    elevation: 0.0
+    height: 3.2
+  - id: L2_TERRACE
+    name: ชานชั้นบน (Outdoor Terrace +3.20m)
+    elevation: 3.2
+    height: 0.3
+  - id: L2_LIVING
+    name: เรือนพักผ่อน-รับแขก (+3.50m)
+    elevation: 3.5
+    height: 2.8
+  - id: L2_BEDROOM
+    name: เรือนนอน 1, 2 (+3.80m)
+    elevation: 3.8
+    height: 3.1
+  - id: ROOF_LIVING
+    name: ระดับอะเสหลังคาเรือนพักผ่อน (+6.30m)
+    elevation: 6.3
+    height: 1.48
+  - id: ROOF
+    name: ระดับอะเสหลังคาเรือนนอน (+6.90m)
+    elevation: 6.9
+    height: 1.66
+grids:
+  axes_x:
+    '1': 0.0
+    '2': 3.0
+    '3': 6.0
+    '4': 9.0
+    '5': 12.5
+  axes_y:
+    ก: 0.0
+    ข: 2.5
+    ค: 5.0
+    ง: 8.0
+    จ: 10.0
+    ฉ: 14.0
+materials:
+- id: CONC_240
+  name: คอนกรีตโครงสร้าง คสล. 1:2:4 (240 ksc)
+  category: concrete
+  unit_cost_ref: MAT-C240
+- id: WOOD_SIDING
+  name: ไม้ฝาสำเร็จรูปหรือไม้จริง 1/2" x 8" ตีซ้อนเกล็ด
+  category: timber
+  unit_cost_ref: MAT-017
+- id: RED_BRICK
+  name: ก่ออิฐมอญครึ่งแผ่น
+  category: masonry
+  unit_cost_ref: MAT-015
+- id: PLASTER_EXT
+  name: ปูนฉาบเรียบภายนอกอาคาร
+  category: finish
+  unit_cost_ref: MAT-021
+- id: PLASTER_INT
+  name: ปูนฉาบเรียบภายในอาคาร
+  category: finish
+  unit_cost_ref: MAT-021
+- id: CERAMIC_TILE_FLOOR
+  name: กระเบื้องดินเผา/กระเบื้องเคลือบผิวด้าน 8" x 8"
+  category: finish
+  unit_cost_ref: MAT-024
+- id: WOOD_FLOOR
+  name: พื้นไม้เนื้อแข็ง 1" x 4" ตีเข้าลิ้น
+  category: timber
+  unit_cost_ref: MAT-026
+- id: LEAN_CONC
+  name: คอนกรีตหยาบรองก้นหลุม 1:3:5
+  category: concrete
+  unit_cost_ref: MAT-LEAN
+- id: TEAK_WOOD
+  name: ไม้สักแปรรูปทำวงกบและกรอบบานประตู-หน้าต่าง
+  category: timber
+  unit_cost_ref: MAT-010
+- id: GLASS_CLEAR
+  name: กระจกใสหนา 5 มม.
+  category: finish
+  unit_cost_ref: MAT-011
+- id: DOOR_PVC
+  name: ประตูไฟเบอร์กลาส/PVC พร้อมวงกบ (ห้องน้ำ)
+  category: finish
+  unit_cost_ref: MAT-012
+- id: STEEL_ROOF
+  name: เหล็กรูปพรรณโครงสร้างหลังคา (อกไก่ จันทัน ตะเข้สัน แป)
+  category: steel
+  unit_cost_ref: MAT-005
+- id: ROOF_TILE_WAO
+  name: กระเบื้องว่าวซีเมนต์ 13 นิ้ว มุงหลังคา
+  category: roof
+  unit_cost_ref: MAT-001
+elements:
+- class: IfcFooting
+  tag: F10-1ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '1'
+    - ฉ
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-1ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - ฉ
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-2ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '2'
+    - ฉ
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-2ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - ฉ
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-3ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '3'
+    - ฉ
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-3ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '3'
+    - ฉ
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-4ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '4'
+    - ฉ
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-4ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ฉ
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-1จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '1'
+    - จ
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-1จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - จ
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-2จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '2'
+    - จ
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-2จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - จ
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-3จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '3'
+    - จ
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-3จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '3'
+    - จ
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-4จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '4'
+    - จ
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-4จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - จ
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-1ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '1'
+    - ง
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-1ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - ง
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-2ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '2'
+    - ง
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-2ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - ง
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-3ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '3'
+    - ง
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-3ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '3'
+    - ง
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-4ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '4'
+    - ง
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-4ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ง
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-1ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '1'
+    - ค
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-1ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - ค
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-2ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '2'
+    - ค
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-2ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - ค
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-4ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '4'
+    - ค
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-4ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ค
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-5ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '5'
+    - ค
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-5ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '5'
+    - ค
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-1ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '1'
+    - ข
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-1ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - ข
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-2ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '2'
+    - ข
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-2ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - ข
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-3ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '3'
+    - ข
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-3ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '3'
+    - ข
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-4ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '4'
+    - ข
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-4ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ข
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-5ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '5'
+    - ข
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-5ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '5'
+    - ข
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-4ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '4'
+    - ก
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-4ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ก
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcFooting
+  tag: F10-5ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 1.2
+    depth: 1.75
+    thickness: 0.25
+  placement:
+    grid:
+    - '5'
+    - ก
+    storey: FOUNDATION
+- class: IfcColumn
+  tag: C0-5ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '5'
+    - ก
+    base_storey: FOUNDATION
+    top_storey: L1
+- class: IfcColumn
+  tag: C1-1ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - ฉ
+    base_storey: L1
+    top_storey: L2_BEDROOM
+- class: IfcColumn
+  tag: C1-2ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - ฉ
+    base_storey: L1
+    top_storey: L2_BEDROOM
+- class: IfcColumn
+  tag: C1-3ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '3'
+    - ฉ
+    base_storey: L1
+    top_storey: L2_BEDROOM
+- class: IfcColumn
+  tag: C1-4ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ฉ
+    base_storey: L1
+    top_storey: L2_BEDROOM
+- class: IfcColumn
+  tag: C1-1จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - จ
+    base_storey: L1
+    top_storey: L2_BEDROOM
+- class: IfcColumn
+  tag: C1-2จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - จ
+    base_storey: L1
+    top_storey: L2_BEDROOM
+- class: IfcColumn
+  tag: C1-3จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '3'
+    - จ
+    base_storey: L1
+    top_storey: L2_BEDROOM
+- class: IfcColumn
+  tag: C1-4จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - จ
+    base_storey: L1
+    top_storey: L2_BEDROOM
+- class: IfcColumn
+  tag: C1-1ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - ง
+    base_storey: L1
+    top_storey: L2_TERRACE
+- class: IfcColumn
+  tag: C1-2ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - ง
+    base_storey: L1
+    top_storey: L2_TERRACE
+- class: IfcColumn
+  tag: C1-3ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '3'
+    - ง
+    base_storey: L1
+    top_storey: L2_TERRACE
+- class: IfcColumn
+  tag: C1-4ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ง
+    base_storey: L1
+    top_storey: L2_TERRACE
+- class: IfcColumn
+  tag: C1-1ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - ค
+    base_storey: L1
+    top_storey: L2_TERRACE
+- class: IfcColumn
+  tag: C1-2ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - ค
+    base_storey: L1
+    top_storey: L2_TERRACE
+- class: IfcColumn
+  tag: C1-4ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ค
+    base_storey: L1
+    top_storey: L2_LIVING
+- class: IfcColumn
+  tag: C1-5ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '5'
+    - ค
+    base_storey: L1
+    top_storey: L2_LIVING
+- class: IfcColumn
+  tag: C1-1ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - ข
+    base_storey: L1
+    top_storey: L2_TERRACE
+- class: IfcColumn
+  tag: C1-2ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - ข
+    base_storey: L1
+    top_storey: L2_TERRACE
+- class: IfcColumn
+  tag: C1-3ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '3'
+    - ข
+    base_storey: L1
+    top_storey: L2_TERRACE
+- class: IfcColumn
+  tag: C1-4ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ข
+    base_storey: L1
+    top_storey: L2_LIVING
+- class: IfcColumn
+  tag: C1-5ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '5'
+    - ข
+    base_storey: L1
+    top_storey: L2_LIVING
+- class: IfcColumn
+  tag: C1-4ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ก
+    base_storey: L1
+    top_storey: L2_LIVING
+- class: IfcColumn
+  tag: C1-5ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '5'
+    - ก
+    base_storey: L1
+    top_storey: L2_LIVING
+- class: IfcBeam
+  tag: GB-1ฉ-2ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '1'
+    - ฉ
+    to_grid:
+    - '2'
+    - ฉ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+- class: IfcBeam
+  tag: GB-2ฉ-3ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '2'
+    - ฉ
+    to_grid:
+    - '3'
+    - ฉ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+- class: IfcBeam
+  tag: GB-3ฉ-4ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '3'
+    - ฉ
+    to_grid:
+    - '4'
+    - ฉ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+- class: IfcBeam
+  tag: GB-1จ-2จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '1'
+    - จ
+    to_grid:
+    - '2'
+    - จ
+    storey: L1
+    offset_z: 0.2
+- class: IfcBeam
+  tag: GB-2จ-3จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '2'
+    - จ
+    to_grid:
+    - '3'
+    - จ
+    storey: L1
+    offset_z: 0.2
+- class: IfcBeam
+  tag: GB-3จ-4จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '3'
+    - จ
+    to_grid:
+    - '4'
+    - จ
+    storey: L1
+    offset_z: 0.2
+- class: IfcBeam
+  tag: GB-1ง-2ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '1'
+    - ง
+    to_grid:
+    - '2'
+    - ง
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-2ง-3ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '2'
+    - ง
+    to_grid:
+    - '3'
+    - ง
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-3ง-4ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '3'
+    - ง
+    to_grid:
+    - '4'
+    - ง
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-1ข-2ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '1'
+    - ข
+    to_grid:
+    - '2'
+    - ข
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-2ข-3ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '2'
+    - ข
+    to_grid:
+    - '3'
+    - ข
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-3ข-4ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '3'
+    - ข
+    to_grid:
+    - '4'
+    - ข
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-4ข-5ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '4'
+    - ข
+    to_grid:
+    - '5'
+    - ข
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-4ก-5ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '4'
+    - ก
+    to_grid:
+    - '5'
+    - ก
+    storey: L1
+    offset_z: 0.0
+- class: IfcBeam
+  tag: GB-1ฉ-1จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '1'
+    - ฉ
+    to_grid:
+    - '1'
+    - จ
+    storey: L1
+    offset_z: 0.2
+- class: IfcBeam
+  tag: GB-1จ-1ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '1'
+    - จ
+    to_grid:
+    - '1'
+    - ง
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-1ง-1ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '1'
+    - ง
+    to_grid:
+    - '1'
+    - ค
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-1ค-1ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '1'
+    - ค
+    to_grid:
+    - '1'
+    - ข
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-4ค-4ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '4'
+    - ค
+    to_grid:
+    - '4'
+    - ข
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-4ข-4ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '4'
+    - ข
+    to_grid:
+    - '4'
+    - ก
+    storey: L1
+    offset_z: 0.1
+- class: IfcBeam
+  tag: GB-5ค-5ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '5'
+    - ค
+    to_grid:
+    - '5'
+    - ข
+    storey: L1
+- class: IfcBeam
+  tag: GB-5ข-5ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '5'
+    - ข
+    to_grid:
+    - '5'
+    - ก
+    storey: L1
+    offset_z: 0.0
+- class: IfcSlab
+  tag: S1-DINING-KITCHEN
+  material: CONC_240
+  thickness: 0.1
+  placement:
+    boundary:
+    - - '1'
+      - จ
+    - - '4'
+      - จ
+    - - '4'
+      - ฉ
+    - - '1'
+      - ฉ
+    storey: L1
+    offset_z: 0.2
+- class: IfcSlab
+  tag: S1-BATHROOM
+  material: CONC_240
+  thickness: 0.1
+  placement:
+    boundary:
+    - - '1'
+      - ง
+    - - '2'
+      - ง
+    - - '2'
+      - จ
+    - - '1'
+      - จ
+    storey: L1
+    offset_z: 0.0
+- class: IfcSlab
+  tag: S1-MULTI-PURPOSE
+  material: CONC_240
+  thickness: 0.1
+  placement:
+    boundary:
+    - - '1'
+      - ข
+    - - '4'
+      - ข
+    - - '4'
+      - ง
+    - - '1'
+      - ง
+    storey: L1
+    offset_z: 0.1
+- class: IfcSlab
+  tag: S1-PARKING
+  material: CONC_240
+  thickness: 0.12
+  placement:
+    boundary:
+    - - '4'
+      - ก
+    - - '5'
+      - ก
+    - - '5'
+      - ค
+    - - '4'
+      - ค
+    storey: L1
+    offset_z: 0.0
+- class: IfcWall
+  tag: W1-REAR-KITCHEN
+  height: 3.2
+  placement:
+    from_grid:
+    - '1'
+    - ฉ
+    to_grid:
+    - '4'
+    - ฉ
+    storey: L1
+    offset_z: 0.2
+  layers:
+  - name: ฉาบปูนภายนอก
+    material: PLASTER_EXT
+    thickness: 0.015
+    function: finish
+  - name: อิฐมอญก่อครึ่งแผ่น
+    material: RED_BRICK
+    thickness: 0.07
+    function: structure
+  - name: ฉาบปูนภายใน
+    material: PLASTER_INT
+    thickness: 0.015
+    function: finish
+  children:
+  - class: IfcWindow
+    tag: W1-01-KITCHEN
+    material: GLASS_CLEAR
+    dimensions:
+      width: 1.0
+      height: 1.2
+    offset_distance: 1.5
+    sill_height: 0.8
+  - class: IfcWindow
+    tag: W1-02-DINING
+    material: GLASS_CLEAR
+    dimensions:
+      width: 1.0
+      height: 1.2
+    offset_distance: 4.5
+    sill_height: 0.8
+  - class: IfcWindow
+    tag: W1-03-DINING
+    material: GLASS_CLEAR
+    dimensions:
+      width: 1.0
+      height: 1.2
+    offset_distance: 7.5
+    sill_height: 0.8
+- class: IfcWall
+  tag: W1-SIDE-DINING
+  height: 3.2
+  placement:
+    from_grid:
+    - '1'
+    - จ
+    to_grid:
+    - '1'
+    - ฉ
+    storey: L1
+    offset_z: 0.2
+  layers:
+  - name: ฉาบปูนภายนอก
+    material: PLASTER_EXT
+    thickness: 0.015
+    function: finish
+  - name: อิฐมอญก่อครึ่งแผ่น
+    material: RED_BRICK
+    thickness: 0.07
+    function: structure
+  - name: ฉาบปูนภายใน
+    material: PLASTER_INT
+    thickness: 0.015
+    function: finish
+- class: IfcWall
+  tag: W1-SIDE-KITCHEN
+  height: 3.2
+  placement:
+    from_grid:
+    - '4'
+    - จ
+    to_grid:
+    - '4'
+    - ฉ
+    storey: L1
+    offset_z: 0.2
+  layers:
+  - name: ฉาบปูนภายนอก
+    material: PLASTER_EXT
+    thickness: 0.015
+    function: finish
+  - name: อิฐมอญก่อครึ่งแผ่น
+    material: RED_BRICK
+    thickness: 0.07
+    function: structure
+  - name: ฉาบปูนภายใน
+    material: PLASTER_INT
+    thickness: 0.015
+    function: finish
+- class: IfcWall
+  tag: W1-FRONT-DINING
+  height: 3.2
+  placement:
+    from_grid:
+    - '1'
+    - จ
+    to_grid:
+    - '4'
+    - จ
+    storey: L1
+    offset_z: 0.2
+  layers:
+  - name: ฉาบปูนภายนอก
+    material: PLASTER_EXT
+    thickness: 0.015
+    function: finish
+  - name: อิฐมอญก่อครึ่งแผ่น
+    material: RED_BRICK
+    thickness: 0.07
+    function: structure
+  - name: ฉาบปูนภายใน
+    material: PLASTER_INT
+    thickness: 0.015
+    function: finish
+  children:
+  - class: IfcDoor
+    tag: D1-01-DINING
+    material: TEAK_WOOD
+    dimensions:
+      width: 1.3
+      height: 2.0
+    offset_distance: 1.5
+    sill_height: 0.0
+  - class: IfcDoor
+    tag: D4-01-KITCHEN
+    material: TEAK_WOOD
+    dimensions:
+      width: 0.9
+      height: 2.0
+    offset_distance: 6.5
+    sill_height: 0.0
+- class: IfcWall
+  tag: W1-BATH-WEST
+  height: 2.8
+  placement:
+    from_grid:
+    - '1'
+    - ง
+    to_grid:
+    - '1'
+    - จ
+    storey: L1
+  layers:
+  - name: ฉาบปูนภายนอก
+    material: PLASTER_EXT
+    thickness: 0.015
+    function: finish
+  - name: อิฐมอญก่อครึ่งแผ่น
+    material: RED_BRICK
+    thickness: 0.07
+    function: structure
+  - name: ฉาบปูนภายใน
+    material: PLASTER_INT
+    thickness: 0.015
+    function: finish
+  children:
+  - class: IfcWindow
+    tag: W2-01-BATH1
+    material: GLASS_CLEAR
+    dimensions:
+      width: 1.15
+      height: 0.6
+    offset_distance: 0.4
+    sill_height: 1.65
+- class: IfcWall
+  tag: W1-BATH-SOUTH
+  height: 2.8
+  placement:
+    from_grid:
+    - '1'
+    - ง
+    to_grid:
+    - '2'
+    - ง
+    storey: L1
+  layers:
+  - name: ฉาบปูนภายนอก
+    material: PLASTER_EXT
+    thickness: 0.015
+    function: finish
+  - name: อิฐมอญก่อครึ่งแผ่น
+    material: RED_BRICK
+    thickness: 0.07
+    function: structure
+  - name: ฉาบปูนภายใน
+    material: PLASTER_INT
+    thickness: 0.015
+    function: finish
+  children:
+  - class: IfcDoor
+    tag: D3-01-BATH1
+    material: DOOR_PVC
+    dimensions:
+      width: 0.8
+      height: 2.1
+    offset_distance: 1.0
+    sill_height: 0.0
+- class: IfcColumn
+  tag: C2-1ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - ฉ
+    base_storey: L2_BEDROOM
+    top_storey: ROOF
+- class: IfcColumn
+  tag: C2-2ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - ฉ
+    base_storey: L2_BEDROOM
+    top_storey: ROOF
+- class: IfcColumn
+  tag: C2-3ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '3'
+    - ฉ
+    base_storey: L2_BEDROOM
+    top_storey: ROOF
+- class: IfcColumn
+  tag: C2-4ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ฉ
+    base_storey: L2_BEDROOM
+    top_storey: ROOF
+- class: IfcColumn
+  tag: C2-1จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '1'
+    - จ
+    base_storey: L2_BEDROOM
+    top_storey: ROOF
+- class: IfcColumn
+  tag: C2-2จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '2'
+    - จ
+    base_storey: L2_BEDROOM
+    top_storey: ROOF
+- class: IfcColumn
+  tag: C2-3จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '3'
+    - จ
+    base_storey: L2_BEDROOM
+    top_storey: ROOF
+- class: IfcColumn
+  tag: C2-4จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - จ
+    base_storey: L2_BEDROOM
+    top_storey: ROOF
+- class: IfcColumn
+  tag: C2-4ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ค
+    base_storey: L2_LIVING
+    top_storey: ROOF_LIVING
+- class: IfcColumn
+  tag: C2-5ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '5'
+    - ค
+    base_storey: L2_LIVING
+    top_storey: ROOF_LIVING
+- class: IfcColumn
+  tag: C2-4ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ข
+    base_storey: L2_LIVING
+    top_storey: ROOF_LIVING
+- class: IfcColumn
+  tag: C2-5ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '5'
+    - ข
+    base_storey: L2_LIVING
+    top_storey: ROOF_LIVING
+- class: IfcColumn
+  tag: C2-4ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '4'
+    - ก
+    base_storey: L2_LIVING
+    top_storey: ROOF_LIVING
+- class: IfcColumn
+  tag: C2-5ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.2
+  placement:
+    grid:
+    - '5'
+    - ก
+    base_storey: L2_LIVING
+    top_storey: ROOF_LIVING
+- class: IfcBeam
+  tag: 2B-1ฉ-2ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '1'
+    - ฉ
+    to_grid:
+    - '2'
+    - ฉ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+- class: IfcBeam
+  tag: 2B-2ฉ-3ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '2'
+    - ฉ
+    to_grid:
+    - '3'
+    - ฉ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+- class: IfcBeam
+  tag: 2B-3ฉ-4ฉ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '3'
+    - ฉ
+    to_grid:
+    - '4'
+    - ฉ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+- class: IfcBeam
+  tag: 2B-1จ-2จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '1'
+    - จ
+    to_grid:
+    - '2'
+    - จ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+- class: IfcBeam
+  tag: 2B-2จ-3จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '2'
+    - จ
+    to_grid:
+    - '3'
+    - จ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+- class: IfcBeam
+  tag: 2B-3จ-4จ
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '3'
+    - จ
+    to_grid:
+    - '4'
+    - จ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+- class: IfcBeam
+  tag: 2B-1ง-2ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '1'
+    - ง
+    to_grid:
+    - '2'
+    - ง
+    storey: L2_TERRACE
+    offset_z: 0.0
+- class: IfcBeam
+  tag: 2B-2ง-4ง
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '2'
+    - ง
+    to_grid:
+    - '4'
+    - ง
+    storey: L2_TERRACE
+    offset_z: 0.0
+- class: IfcBeam
+  tag: 2B-2ข-4ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '2'
+    - ข
+    to_grid:
+    - '4'
+    - ข
+    storey: L2_TERRACE
+    offset_z: 0.0
+- class: IfcBeam
+  tag: 2B-4ค-5ค
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '4'
+    - ค
+    to_grid:
+    - '5'
+    - ค
+    storey: L2_LIVING
+    offset_z: 0.0
+- class: IfcBeam
+  tag: 2B-4ข-5ข
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '4'
+    - ข
+    to_grid:
+    - '5'
+    - ข
+    storey: L2_LIVING
+    offset_z: 0.0
+- class: IfcBeam
+  tag: 2B-4ก-5ก
+  material: CONC_240
+  profile:
+    shape: BOX
+    width: 0.2
+    depth: 0.4
+  placement:
+    from_grid:
+    - '4'
+    - ก
+    to_grid:
+    - '5'
+    - ก
+    storey: L2_LIVING
+    offset_z: 0.0
+- class: IfcSlab
+  tag: S2-BEDROOMS
+  material: CONC_240
+  thickness: 0.12
+  placement:
+    boundary:
+    - - '1'
+      - จ
+    - - '4'
+      - จ
+    - - '4'
+      - ฉ
+    - - '1'
+      - ฉ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+- class: IfcSlab
+  tag: S2-OUTDOOR-CHAN
+  material: CONC_240
+  thickness: 0.1
+  placement:
+    boundary:
+    - - '1'
+      - ข
+    - - '4'
+      - ข
+    - - '4'
+      - จ
+    - - '1'
+      - จ
+    storey: L2_TERRACE
+    openings:
+    - tag: VOID-STAIRCASE
+      width: 1.8
+      depth: 2.5
+      placement:
+        grid:
+        - '1'
+        - ข
+        offset_x: 0.2
+        offset_y: 0.2
+    offset_z: 0.0
+- class: IfcSlab
+  tag: S2-LIVING-UPPER
+  material: CONC_240
+  thickness: 0.12
+  placement:
+    boundary:
+    - - '4'
+      - ก
+    - - '5'
+      - ก
+    - - '5'
+      - ค
+    - - '4'
+      - ค
+    storey: L2_LIVING
+    offset_z: 0.0
+- class: IfcWall
+  tag: W2-BEDROOM-NORTH
+  height: 3.1
+  placement:
+    from_grid:
+    - '1'
+    - ฉ
+    to_grid:
+    - '4'
+    - ฉ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+  layers:
+  - name: ไม้ฝาสำเร็จรูป 1/2" x 8" ตีซ้อนเกล็ด
+    material: WOOD_SIDING
+    thickness: 0.02
+    function: finish
+  - name: อิฐมอญก่อครึ่งแผ่น
+    material: RED_BRICK
+    thickness: 0.07
+    function: structure
+  - name: ฉาบปูนภายใน
+    material: PLASTER_INT
+    thickness: 0.015
+    function: finish
+  children:
+  - class: IfcWindow
+    tag: W1-04-BED1
+    material: GLASS_CLEAR
+    dimensions:
+      width: 1.0
+      height: 1.2
+    offset_distance: 1.5
+    sill_height: 0.8
+  - class: IfcWindow
+    tag: W1-05-BED1
+    material: GLASS_CLEAR
+    dimensions:
+      width: 1.0
+      height: 1.2
+    offset_distance: 3.8
+    sill_height: 0.8
+  - class: IfcWindow
+    tag: W1-06-BED2
+    material: GLASS_CLEAR
+    dimensions:
+      width: 1.0
+      height: 1.2
+    offset_distance: 6.2
+    sill_height: 0.8
+  - class: IfcWindow
+    tag: W1-07-BED2
+    material: GLASS_CLEAR
+    dimensions:
+      width: 1.0
+      height: 1.2
+    offset_distance: 7.8
+    sill_height: 0.8
+- class: IfcWall
+  tag: W2-BEDROOM-WEST
+  height: 3.1
+  placement:
+    from_grid:
+    - '1'
+    - จ
+    to_grid:
+    - '1'
+    - ฉ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+  layers:
+  - name: ไม้ฝาสำเร็จรูป 1/2" x 8" ตีซ้อนเกล็ด
+    material: WOOD_SIDING
+    thickness: 0.02
+    function: finish
+  - name: อิฐมอญก่อครึ่งแผ่น
+    material: RED_BRICK
+    thickness: 0.07
+    function: structure
+  - name: ฉาบปูนภายใน
+    material: PLASTER_INT
+    thickness: 0.015
+    function: finish
+  children:
+  - class: IfcWindow
+    tag: W1-08-BED1
+    material: GLASS_CLEAR
+    dimensions:
+      width: 1.0
+      height: 1.2
+    offset_distance: 2.0
+    sill_height: 0.8
+- class: IfcWall
+  tag: W2-BEDROOM-SOUTH
+  height: 3.1
+  placement:
+    from_grid:
+    - '1'
+    - จ
+    to_grid:
+    - '4'
+    - จ
+    storey: L2_BEDROOM
+    offset_z: 0.0
+  layers:
+  - name: ไม้ฝาสำเร็จรูป 1/2" x 8" ตีซ้อนเกล็ด
+    material: WOOD_SIDING
+    thickness: 0.02
+    function: finish
+  - name: อิฐมอญก่อครึ่งแผ่น
+    material: RED_BRICK
+    thickness: 0.07
+    function: structure
+  - name: ฉาบปูนภายใน
+    material: PLASTER_INT
+    thickness: 0.015
+    function: finish
+  children:
+  - class: IfcDoor
+    tag: D2-01-BED1
+    material: TEAK_WOOD
+    dimensions:
+      width: 1.3
+      height: 1.95
+    offset_distance: 2.0
+    sill_height: 0.0
+  - class: IfcDoor
+    tag: D2-02-BED2
+    material: TEAK_WOOD
+    dimensions:
+      width: 1.3
+      height: 1.95
+    offset_distance: 6.8
+    sill_height: 0.0
+- class: IfcWall
+  tag: W2-LIVING-EAST
+  height: 2.8
+  placement:
+    from_grid:
+    - '5'
+    - ก
+    to_grid:
+    - '5'
+    - ค
+    storey: L2_LIVING
+    offset_z: 0.0
+  layers:
+  - name: ไม้ฝาสำเร็จรูป 1/2" x 8" ตีซ้อนเกล็ด
+    material: WOOD_SIDING
+    thickness: 0.02
+    function: finish
+  - name: อิฐมอญก่อครึ่งแผ่น
+    material: RED_BRICK
+    thickness: 0.07
+    function: structure
+  - name: ฉาบปูนภายใน
+    material: PLASTER_INT
+    thickness: 0.015
+    function: finish
+  children:
+  - class: IfcWindow
+    tag: W1-09-LIVING
+    material: GLASS_CLEAR
+    dimensions:
+      width: 1.0
+      height: 1.2
+    offset_distance: 1.5
+    sill_height: 0.8
+  - class: IfcWindow
+    tag: W1-10-LIVING
+    material: GLASS_CLEAR
+    dimensions:
+      width: 1.0
+      height: 1.2
+    offset_distance: 3.5
+    sill_height: 0.8
+- class: IfcStair
+  tag: ST1
+  material: CONC_240
+  stair_type: DOG_LEG
+  width: 1.1
+  waist_thickness: 0.15
+  placement:
+    grid_anchor:
+    - '1'
+    - ข
+    from_storey: L1
+    to_storey: L2_TERRACE
+    offset_x: 0.0
+    offset_y: 0.0
+    offset_z: 0.0
+    orientation: +Y
+  landing:
+    elevation: 1.6
+    depth: 1.5
+    thickness: 0.15
+  steps:
+    tread: 0.27
+    riser: 0.181
+    n_risers: 16
+  railing:
+    height: 0.9
+    type: WOOD_RAILING
+    side: BOTH
+- class: IfcRoof
+  tag: ROOF-MAIN
+  material: STEEL_ROOF
+  roof_type: GABLE
+  placement:
+    boundary:
+    - - '1'
+      - ง
+    - - '4'
+      - ง
+    - - '4'
+      - ฉ
+    - - '1'
+      - ฉ
+    storey: ROOF
+    offset_z: 0.0
+    overhang: 1.6
+    ridge_orientation: X
+  covering:
+    tile_type: CONCRETE_TILE
+    material: ROOF_TILE_WAO
+    pitch: 35.0
+    fascia_board: true
+    ridge_cap: true
+  framing:
+    truss_type: STEEL_TRUSS
+    material: STEEL_ROOF
+    spacing: 1.0
+    purlin_spacing: 0.235
+    steel_weight_per_sqm: 16.5
+- class: IfcRoof
+  tag: ROOF-LIVING
+  material: STEEL_ROOF
+  roof_type: HIP
+  placement:
+    boundary:
+    - - '4'
+      - ก
+    - - '5'
+      - ก
+    - - '5'
+      - ค
+    - - '4'
+      - ค
+    storey: ROOF_LIVING
+    offset_z: 0.0
+    overhang: 1.6
+    ridge_orientation: Y
+  covering:
+    tile_type: CONCRETE_TILE
+    material: ROOF_TILE_WAO
+    pitch: 30.0
+    fascia_board: true
+    ridge_cap: true
+  framing:
+    truss_type: STEEL_TRUSS
+    material: STEEL_ROOF
+    spacing: 1.0
+    purlin_spacing: 0.235
+    steel_weight_per_sqm: 16.5
